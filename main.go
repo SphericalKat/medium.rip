@@ -1,7 +1,12 @@
 package main
 
-import "fmt"
+import (
+	log "github.com/sirupsen/logrus"
+
+	"github.com/medium.rip/api"
+)
 
 func main() {
-	fmt.Println("Hello, World!")
+	log.Println("Starting HTTP server...")
+	api.RegisterRoutes()
 }

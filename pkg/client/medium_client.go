@@ -2,8 +2,8 @@ package client
 
 import (
 	"fmt"
+	log "github.com/sirupsen/logrus"
 	"io"
-	"log"
 	"net/http"
 	"strings"
 
@@ -87,6 +87,6 @@ func PostData(postId string) (*entities.MediumResponse, error) {
 		log.Printf("Error unmarshalling body from response %v\n", err)
 		return nil, err
 	}
-	
+
 	return &mr, nil
 }
