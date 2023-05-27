@@ -2,15 +2,33 @@ package client
 
 import (
 	"fmt"
-	log "github.com/sirupsen/logrus"
 	"io"
 	"net/http"
+	"os"
 	"strings"
 
+	log "github.com/sirupsen/logrus"
+
+	"github.com/medium.rip/internal/config"
 	"github.com/medium.rip/pkg/entities"
 )
 
 func PostData(postId string) (*entities.MediumResponse, error) {
+	if config.Conf.Env == "dev" {
+		file, err := os.ReadFile("response.json")
+		if err != nil {
+			return nil, err
+		}
+
+		mr, err := entities.UnmarshalMediumResponse(file)
+		if err != nil {
+			log.Printf("Error unmarshalling body from response %v\n", err)
+			return nil, err
+		}
+
+		return &mr, nil
+	}
+
 	// http client to post data
 	url := "https://medium.com/_/graphql"
 	method := "POST"
