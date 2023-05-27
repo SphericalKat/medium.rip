@@ -4,7 +4,10 @@ go 1.20
 
 require github.com/sirupsen/logrus v1.9.2
 
-require github.com/fsnotify/fsnotify v1.6.0 // indirect
+require (
+	github.com/fsnotify/fsnotify v1.6.0 // indirect
+	github.com/gofiber/template v1.8.1 // indirect
+)
 
 require (
 	github.com/andybalholm/brotli v1.0.5 // indirect

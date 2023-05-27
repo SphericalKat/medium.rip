@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --accent: #23b0ff;
+    --background: #1f222a;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+@media (min-width: 1024px) {
+    html {
+        font-size: 1.125rem;
+        line-height: 1.7777778;
+    }
+}
+
+body {
+    background-color: #1f222a;
+    color: #ffffff;
+    line-height: 1.54;
+    letter-spacing: -0.02em;
+    font-variant-ligatures: contextual;
+    font-size: 1rem;
+}
+
+.text-accent {
+    color: var(--accent);
+}
+
+.bg-accent {
+    background: var(--accent);
+}

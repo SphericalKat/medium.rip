@@ -3,25 +3,34 @@ package api
 import (
 	"context"
 	"fmt"
+	"net/http"
 	"sync"
 
+	"github.com/medium.rip/api/routes"
 	"github.com/medium.rip/internal/config"
 	log "github.com/sirupsen/logrus"
 
 	"github.com/gofiber/fiber/v2"
+	"github.com/gofiber/fiber/v2/middleware/filesystem"
+	"github.com/gofiber/template/html"
 )
 
-func RegisterRoutes(ctx context.Context, wg *sync.WaitGroup) {
+func RegisterRoutes(ctx context.Context, wg *sync.WaitGroup, engine *html.Engine, fs http.FileSystem) {
 	app := fiber.New(fiber.Config{
 		StreamRequestBody:     true,
 		ServerHeader:          "Katbox",
 		AppName:               "Katbox",
 		DisableStartupMessage: true,
+		Views: engine,
 	})
 
-	app.Get("/", func(c *fiber.Ctx) error {
-		return c.SendString("OK")
-	})
+	// static file server
+	app.Use("/assets", filesystem.New(filesystem.Config{
+		Root: fs,
+		Browse: config.Conf.Env == "dev",
+	}))
+
+	routes.RegisterRoutes(app)
 
 	go func(app *fiber.App) {
 		log.Printf("Starting http server at: http://localhost:%s", config.Conf.Port)
