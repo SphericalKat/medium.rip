@@ -66,7 +66,8 @@ func PostData(postId string) (*entities.MediumResponse, error) {
 		return nil, err
 	}
 
-	req.Header.Add("Content-Type", "application/json")
+	req.Header.Add("Accept", "application/json")
+	req.Header.Add("Content-Type", "application/json; charset=utf-8")
 
 	res, err := client.Do(req)
 	if err != nil {
