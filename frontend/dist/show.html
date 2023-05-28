@@ -14,13 +14,13 @@
         rel="stylesheet">
 
     <title>{{ .Title }}</title>
-  <link rel="stylesheet" href="/assets/show-9b4da228.css">
+  <link rel="stylesheet" href="/assets/show-d7d0e271.css">
 </head>
 
 <body class="flex flex-col h-full w-full items-center">
-    <article class="prose lg:prose-xl p-20">
-        <h2 class="text-2xl">{{.Title}}</h2>
-        <p><a href="https://medium.com/u/{{.UserId}}">{{.Author}}</a> on {{.PublishDate}}</p>
+    <article class="prose lg:prose-lg sm:prose-sm py-20">
+        <h1 class="text-2xl">{{.Title}}</h1>
+        <p class="pb-8"><a href="https://medium.com/u/{{.UserId}}">{{.Author}}</a> on {{.PublishDate}}</p>
         {{.Paragraphs}}
     </article>
 </body>

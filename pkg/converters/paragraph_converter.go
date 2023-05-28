@@ -62,7 +62,13 @@ func ConvertParagraphs(paragraphs []entities.Paragraph) string {
 
 	var ps strings.Builder
 
+	skipCount := 0
 	for i, p := range paragraphs {
+		if skipCount > 0 {
+			skipCount--
+			continue
+		}
+
 		switch p.Type {
 		case "BQ", "MIXTAPE_EMBED", "PQ":
 			children := ConvertMarkup(p.Text, p.Markups)
@@ -92,10 +98,12 @@ func ConvertParagraphs(paragraphs []entities.Paragraph) string {
 		case "IMG":
 			ps.WriteString(convertImg(p))
 		case "OLI":
-			listItems := convertOli(paragraphs[i:])
+			listItems, skip := convertOli(paragraphs[i:])
+			skipCount = skip
 			ps.WriteString(fmt.Sprintf("<ol>%s</ol>", listItems))
 		case "ULI":
-			listItems := convertUli(paragraphs[i:])
+			listItems, skip := convertUli(paragraphs[i:])
+			skipCount = skip
 			ps.WriteString(fmt.Sprintf("<ul>%s</ul>", listItems))
 		case "P":
 			children := ConvertMarkup(p.Text, p.Markups)
@@ -115,7 +123,7 @@ func ConvertParagraphs(paragraphs []entities.Paragraph) string {
 func convertImg(p entities.Paragraph) string {
 	if p.Metadata != nil {
 		captionMarkup := ConvertMarkup(p.Text, p.Markups)
-		img := Image{ID : p.Metadata.ID}
+		img := Image{ID: p.Metadata.ID}
 		img.Initialize(&p.Metadata.OriginalWidth, &p.Metadata.OriginalHeight)
 		return fmt.Sprintf("<figure><img src=\"%s\" width=\"%d\" /><figcaption>%s</figcaption></figure>", img.src(), img.width(), captionMarkup)
 	} else {
@@ -123,22 +131,39 @@ func convertImg(p entities.Paragraph) string {
 	}
 }
 
-func convertOli(ps []entities.Paragraph) string {
-	if len(ps) != 0 && ps[0].Type == "OLI" {
-		p := ps[0]
-		children := ConvertMarkup(p.Text, p.Markups)
-		return fmt.Sprintf("<li>%s</li>", children) + convertOli(ps[1:])
-	} else {
-		return ""
+func convertOli(ps []entities.Paragraph) (string, int) {
+	var sb strings.Builder
+	count := 0
+
+	for _, p := range ps {
+		if p.Type == "OLI" {
+			children := ConvertMarkup(p.Text, p.Markups)
+			sb.WriteString(fmt.Sprintf("<li>%s</li>", children))
+			count++
+		} else {
+			break
+		}
 	}
+	
+	return sb.String(), count
 }
 
-func convertUli(ps []entities.Paragraph) string {
-	if len(ps) != 0 && ps[0].Type == "ULI" {
-		p := ps[0]
-		children := ConvertMarkup(p.Text, p.Markups)
-		return fmt.Sprintf("<li>%s</li>", children) + convertUli(ps[1:])
-	} else {
-		return ""
+func convertUli(ps []entities.Paragraph) (string, int) {
+	var sb strings.Builder
+	count := 0
+
+	for _, p := range ps {
+		if p.Type == "ULI" {
+			if p.Text == "Rename the example.env to .env." {
+				fmt.Println("HERE")
+			}
+			children := ConvertMarkup(p.Text, p.Markups)
+			sb.WriteString(fmt.Sprintf("<li>%s</li>", children))
+			count++
+		} else {
+			break
+		}
 	}
+	
+	return sb.String(), count
 }
