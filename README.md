@@ -17,7 +17,7 @@ pnpm i
 pnpm run build
 ```
 
-Then, build the binary. The frontend static filesa will be embedded in the binary using `go:embed`.
+Then, build the binary. The frontend static files will be embedded in the binary using `go:embed`.
 ```sh
 go mod download
 go build .
