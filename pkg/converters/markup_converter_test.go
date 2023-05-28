@@ -1,7 +1,6 @@
 package converters
 
 import (
-	"encoding/json"
 	"testing"
 
 	"github.com/medium.rip/pkg/entities"
@@ -59,32 +58,20 @@ func TestRanges(t *testing.T) {
 }
 
 func TestConvert(t *testing.T) {
-	jsonData := `{
-		"name": "254a",
-		"text": "Early Flush prevents subsequent changes to the headers (e.g to redirect or change the status code). In the React + NodeJS world, it’s common to delegate redirects and error throwing to a React app rendered after the data has been fetched. This won’t work if you’ve already sent an early <head> tag and a 200 OK status.",
-		"type": "P",
-		"href": null,
-		"layout": null,
-		"markups": [
-			{
-				"title": null,
-				"type": "CODE",
-				"href": null,
-				"userId": null,
-				"start": 287,
-				"end": 293,
-				"anchorType": null
-			}
-		],
-		"iframe": null,
-		"metadata": null
-	}`
-	p := new(entities.Paragraph)
-	_ = json.Unmarshal([]byte(jsonData), p)
+	markup := ConvertMarkup("<strong> and emphasized only", []entities.Markup{
+		{
+			Type:  "STRONG",
+			Start: 0,
+			End:   12,
+		},
+		{
+			Type:  "EM",
+			Start: 9,
+			End:   23,
+		},
+	})
 
-	ConvertMarkup(p.Text, p.Markups)
-
-	// if markup != "<strong>strong </strong><em><strong>and</strong></em><em> emphasized</em> only" {
-	// 	t.Errorf("Expected markup to be <strong>strong </strong><em><strong>and</strong></em><em> emphasized</em> only, got %s", markup)
-	// }
+	if markup != "<strong>&lt;strong&gt; </strong><em>&lt;strong&gt;and&lt;/strong&gt;</em><em> emphasized</em> only" {
+		t.Errorf("Expected markup to be <strong>&lt;strong&gt; </strong><em>&lt;strong&gt;and&lt;/strong&gt;</em><em> emphasized</em> only only, got %s", markup)
+	}
 }

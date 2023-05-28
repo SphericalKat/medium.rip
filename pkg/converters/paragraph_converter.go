@@ -107,9 +107,6 @@ func ConvertParagraphs(paragraphs []entities.Paragraph) string {
 			ps.WriteString(fmt.Sprintf("<ul>%s</ul>", listItems))
 		case "P":
 			children := ConvertMarkup(p.Text, p.Markups)
-			if p.Name == "ca5b" {
-				fmt.Println(children)
-			}
 			ps.WriteString(fmt.Sprintf("<p>%s</p>", children))
 		case "PRE":
 			children := ConvertMarkup(p.Text, p.Markups)
