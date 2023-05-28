@@ -11,10 +11,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <title>RIP Medium</title>
+
+    <script>
+          // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
 </head>
 
-<body class="flex justify-center">
-    <article class="flex flex-col h-full w-full justify-center prose px-8 md:px-0">
+<body class="flex justify-center dark:bg-stone-900">
+    <article class="flex flex-col h-full w-full justify-center prose dark:prose-invert px-8 md:px-0">
         <div>
             <h1>Medium.rip</h1>
             <h2>An alternative frontend to Medium</h2>

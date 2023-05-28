@@ -50,11 +50,19 @@
     <meta name="twitter:url" content="https://medium.rip/{{.Path}}">
     <meta property="og:url" content="https://medium.rip/{{.Path}}">
 
-
+    <script>
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
 </head>
 
-<body class="flex flex-col h-full w-full items-center">
-    <article class="prose lg:prose-lg sm:prose-sm py-20 px-8 md:px-0 max-w-sm sm:max-w-2xl">
+<body class="flex flex-col h-full w-full items-center dark:bg-zinc-800">
+    <article
+        class="prose prose-zinc dark:prose-invert lg:prose-lg sm:prose-sm py-20 px-8 md:px-0 max-w-sm sm:max-w-2xl">
         <h1 class="text-2xl">{{.Title}}</h1>
         <p class="pb-8"><a href="https://medium.com/u/{{.UserId}}">{{.Author}}</a> on {{.PublishDate}}</p>
         {{.Paragraphs}}
