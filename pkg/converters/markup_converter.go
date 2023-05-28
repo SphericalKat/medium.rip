@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"sort"
 	"strings"
+	"unicode/utf16"
 
 	"github.com/medium.rip/pkg/entities"
 )
@@ -36,7 +37,7 @@ func ranges(text string, markups []entities.Markup) []RangeWithMarkup {
 
 	// include the start and end indexes of the text
 	markupBoundaries = append([]int{0}, markupBoundaries...)
-	markupBoundaries = append(markupBoundaries, len([]rune(text)))
+	markupBoundaries = append(markupBoundaries, len(utf16.Encode([]rune(text))))
 
 	// remove duplicates
 	markupBoundaries = unique(markupBoundaries)
@@ -72,8 +73,10 @@ func ranges(text string, markups []entities.Markup) []RangeWithMarkup {
 func ConvertMarkup(text string, markups []entities.Markup) string {
 	var markedUp strings.Builder
 	for _, r := range ranges(text, markups) {
-		runeText := []rune(text) // very important otherwise we can't handle UTF-8
-		textToWrap := string(runeText[r.Range[0]:r.Range[1]])
+		// handle utf-16
+		utf16Text := utf16.Encode([]rune(text))
+		ranged := utf16Text[r.Range[0]:r.Range[1]]
+		textToWrap := string(utf16.Decode(ranged))
 		markedUp.WriteString(wrapInMarkups(textToWrap, r.Markups))
 	}
 

@@ -1,18 +1,18 @@
 {
     "data": {
         "post": {
-            "title": "Pandas AI — The Future of Data Analysis",
-            "createdAt": 1683185501743,
+            "title": "Training Your Own LLM using privateGPT",
+            "createdAt": 1684461025636,
             "creator": {
-                "id": "b856005e5ecd",
-                "name": "Fareed Khan"
+                "id": "6599e1e08a48",
+                "name": "Wei-Meng Lee"
             },
             "content": {
                 "bodyModel": {
                     "paragraphs": [
                         {
-                            "name": "b238",
-                            "text": "Pandas AI — The Future of Data Analysis",
+                            "name": "c634",
+                            "text": "Training Your Own LLM using privateGPT",
                             "type": "H3",
                             "href": null,
                             "layout": null,
@@ -21,83 +21,92 @@
                             "metadata": null
                         },
                         {
-                            "name": "cbfd",
-                            "text": "",
+                            "name": "7cfe",
+                            "text": "Learn how to train your own language model without exposing your private data to the provider",
+                            "type": "H4",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "352a",
+                            "text": "Photo by Richard Bell on Unsplash",
                             "type": "IMG",
                             "href": null,
                             "layout": "INSET_CENTER",
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": {
-                                "id": "1*awdsJFX9yyTGK7Ym9I2TtA.png",
-                                "originalWidth": 1481,
-                                "originalHeight": 758
-                            }
-                        },
-                        {
-                            "name": "2c3a",
-                            "text": "Imagine being able to talk to your data like it’s your best friend. That’s what Pandas AI does! This Python library has generative artificial intelligence capabilities that can turn your dataframes into conversationalists. No more endless hours of staring at rows and columns.",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "a1ee",
-                            "text": "But don’t worry, Pandas AI is not here to replace your beloved Pandas. It’s here to enhance it! With Pandas AI, you can take your data analysis and manipulation to the next level. Think of it like a superhero sidekick — it’s there to help you save the day and make your life easier.",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "5514",
-                            "text": "The possibilities with Pandas AI are endless. Imagine having a dataframe that can write its own reports, or one that can analyze complex data and provide you with easy-to-understand summaries.",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "5171",
-                            "text": "In this quick guide, you’ll get a step-by-step walkthrough of how to use this cutting-edge library, regardless of your level of experience in the field.",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "ab65",
-                            "text": "Whether you’re an experienced data analyst or a beginner, this guide will equip you with all the tools you need to dive into the world of Pandas AI with confidence. So sit back, relax, and let’s explore the exciting possibilities that Pandas AI has to offer!",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "42f1",
-                            "text": "Official GitHub Repository — https://github.com/gventuri/pandas-ai",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
                             "markups": [
                                 {
                                     "title": "",
                                     "type": "A",
-                                    "href": "https://github.com/gventuri/pandas-ai",
+                                    "href": "https://unsplash.com/@maplerockdesign?utm_source=medium&utm_medium=referral",
                                     "userId": null,
-                                    "start": 29,
-                                    "end": 66,
+                                    "start": 9,
+                                    "end": 21,
+                                    "anchorType": "LINK"
+                                },
+                                {
+                                    "title": "",
+                                    "type": "A",
+                                    "href": "https://unsplash.com?utm_source=medium&utm_medium=referral",
+                                    "userId": null,
+                                    "start": 25,
+                                    "end": 33,
+                                    "anchorType": "LINK"
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": {
+                                "id": "0*1WQcFWt4MSaUNJ0O",
+                                "originalWidth": 6000,
+                                "originalHeight": 4000
+                            }
+                        },
+                        {
+                            "name": "4323",
+                            "text": "One of the major concerns of using public AI services such as OpenAI’s ChatGPT is the risk of exposing your private data to the provider. For commercial use, this remains the biggest concerns for companies considering adopting AI technologies.",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "4b02",
+                            "text": "Many times, you want to create your own language model that are trained on your set of data (such as sales insights, customers feedback, etc), but at the same time you do not want to expose all these sensitive data to a AI provider such as OpenAI. So the ideal way is to train your own LLM locally, without needing to upload your data to the cloud.",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "d132",
+                            "text": "If your data is public and you don’t mind exposing them to ChatGPT, I have another article that shows how you can connect ChatGPT with your own data:",
+                            "type": "BQ",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "c872",
+                            "text": "Connecting ChatGPT with Your Own Data using LlamaIndex\nLearn how to create your own chatbot for your businesslevelup.gitconnected.com",
+                            "type": "MIXTAPE_EMBED",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": "https://levelup.gitconnected.com/connecting-chatgpt-with-your-own-data-using-llamaindex-663844c06653",
+                                    "type": "A",
+                                    "href": "https://levelup.gitconnected.com/connecting-chatgpt-with-your-own-data-using-llamaindex-663844c06653",
+                                    "userId": null,
+                                    "start": 0,
+                                    "end": 133,
                                     "anchorType": "LINK"
                                 },
                                 {
@@ -106,7 +115,16 @@
                                     "href": null,
                                     "userId": null,
                                     "start": 0,
-                                    "end": 28,
+                                    "end": 54,
+                                    "anchorType": null
+                                },
+                                {
+                                    "title": null,
+                                    "type": "EM",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 55,
+                                    "end": 109,
                                     "anchorType": null
                                 }
                             ],
@@ -114,8 +132,48 @@
                             "metadata": null
                         },
                         {
-                            "name": "7b4c",
-                            "text": "Code— https://colab.research.google.com/drive/1rKz7TudOeCeKGHekw7JFNL4sagN9hon-?usp=sharing",
+                            "name": "2b8a",
+                            "text": "In this article, I will show you how you can use an open-source project called privateGPT to utilize an LLM so that it can answer questions (like ChatGPT) based on your custom training data, all without sacrificing the privacy of your data.",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 79,
+                                    "end": 90,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "e4bf",
+                            "text": "It is important to note that privateGPT is currently a proof-of-concept and is not production ready.",
+                            "type": "BQ",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "d408",
+                            "text": "Downloading privateGPT",
+                            "type": "H3",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "9293",
+                            "text": "To try out privateGPT, you can go to GitHub using the following link: https://github.com/imartinez/privateGPT.",
                             "type": "P",
                             "href": null,
                             "layout": null,
@@ -123,15 +181,592 @@
                                 {
                                     "title": "",
                                     "type": "A",
-                                    "href": "https://colab.research.google.com/drive/1rKz7TudOeCeKGHekw7JFNL4sagN9hon-?usp=sharing",
+                                    "href": "https://github.com/imartinez/privateGPT",
                                     "userId": null,
-                                    "start": 6,
-                                    "end": 91,
+                                    "start": 70,
+                                    "end": 109,
                                     "anchorType": "LINK"
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "43ea",
+                            "text": "You can either download the repository by clicking on the Code | Download ZIP button:",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 58,
+                                    "end": 63,
+                                    "anchorType": null
                                 },
                                 {
                                     "title": null,
                                     "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 65,
+                                    "end": 77,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "9d34",
+                            "text": "",
+                            "type": "IMG",
+                            "href": null,
+                            "layout": "INSET_CENTER",
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": {
+                                "id": "1*aEAiprAOjwcTIS98QvVX7Q.png",
+                                "originalWidth": 1125,
+                                "originalHeight": 856
+                            }
+                        },
+                        {
+                            "name": "37bf",
+                            "text": "Or, if you have git installed on your system, use the following command in Terminal to clone the repository:",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 16,
+                                    "end": 19,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "062d",
+                            "text": "$ git clone https://github.com/imartinez/privateGPT",
+                            "type": "PRE",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "232d",
+                            "text": "Either case, once the repository is downloaded onto your computer, the privateGPT directory should have the following files and folder:",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 71,
+                                    "end": 81,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "e7ae",
+                            "text": "",
+                            "type": "IMG",
+                            "href": null,
+                            "layout": "INSET_CENTER",
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": {
+                                "id": "1*nmtDdyVdOqOTYLN1mNGE6g.png",
+                                "originalWidth": 161,
+                                "originalHeight": 187
+                            }
+                        },
+                        {
+                            "name": "9e09",
+                            "text": "Installing the Required Python Packages",
+                            "type": "H3",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "9e9e",
+                            "text": "privateGPT uses a number of Python packages. They are encapsulated in the requirements.txt file:",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 74,
+                                    "end": 90,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "a035",
+                            "text": "langchain==0.0.171\npygpt4all==1.1.0\nchromadb==0.3.23\nllama-cpp-python==0.1.50\nurllib3==2.0.2\npdfminer.six==20221105\npython-dotenv==1.0.0\nunstructured==0.6.6\nextract-msg==0.41.1\ntabulate==0.9.0\npandoc==2.3\npypandoc==1.11",
+                            "type": "PRE",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "248c",
+                            "text": "The easiest way to install them is to use pip:",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "CODE",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 42,
+                                    "end": 45,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "5b96",
+                            "text": "$ cd privateGPT\n$ pip install -r requirements.txt",
+                            "type": "PRE",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "8770",
+                            "text": "From my experimentation, some required Python packages may not be installed when you perform the installation above. You will know this later on when you try to run either the ingest.py or privateGPT.py file. In such instances, simply install the missing package individually.",
+                            "type": "BQ",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "a2c1",
+                            "text": "Editing the Environment file",
+                            "type": "H3",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "1e12",
+                            "text": "The example.env file contains several settings used by privateGPT. Here is its content:",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 4,
+                                    "end": 15,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "bc04",
+                            "text": "PERSIST_DIRECTORY=db\nMODEL_TYPE=GPT4All\nMODEL_PATH=models/ggml-gpt4all-j-v1.3-groovy.bin\nEMBEDDINGS_MODEL_NAME=all-MiniLM-L6-v2\nMODEL_N_CTX=1000",
+                            "type": "PRE",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "207e",
+                            "text": "PERSIST_DIRECTORY — the directory that will hold the local vector store after your documents are loaded and processed",
+                            "type": "ULI",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 0,
+                                    "end": 17,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "bd5d",
+                            "text": "MODEL_TYPE — the type of model you are using. Here, it is set to GPT4All (a free open-source alternative to ChatGPT by OpenAI).",
+                            "type": "ULI",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 0,
+                                    "end": 10,
+                                    "anchorType": null
+                                },
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 65,
+                                    "end": 72,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "ed03",
+                            "text": "MODEL_PATH — the path where the LLM is located. Here it is set to the models directory and the model used is ggml-gpt4all-j-v1.3-groovy.bin (you will learn where to download this model in the next section)",
+                            "type": "ULI",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 0,
+                                    "end": 10,
+                                    "anchorType": null
+                                },
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 70,
+                                    "end": 76,
+                                    "anchorType": null
+                                },
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 109,
+                                    "end": 139,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "1afb",
+                            "text": "EMBEDDINGS_MODEL_NAME — this refers to the name of a transformer model. Here it is set to all-MiniLM-L6-v2, which maps sentences & paragraphs to a 384 dimensional dense vector space and can be used for tasks like clustering or semantic search.",
+                            "type": "ULI",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 0,
+                                    "end": 21,
+                                    "anchorType": null
+                                },
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 90,
+                                    "end": 106,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "046b",
+                            "text": "MODEL_N_CTX — Maximum token limit for both embeddings and LLM models",
+                            "type": "ULI",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 0,
+                                    "end": 11,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "1780",
+                            "text": "Rename the example.env to .env.",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 11,
+                                    "end": 22,
+                                    "anchorType": null
+                                },
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 26,
+                                    "end": 30,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "5ab7",
+                            "text": "Once this is done, the .env file will become a hidden file.",
+                            "type": "BQ",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "e1f7",
+                            "text": "Downloading the Model",
+                            "type": "H3",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "5202",
+                            "text": "In order for privateGPT to work, it needs to pre-trained model (a LLM). As privateGPT is using GPT4All, you can download the LLMs from: https://gpt4all.io/index.html:",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": "",
+                                    "type": "A",
+                                    "href": "https://gpt4all.io/index.html",
+                                    "userId": null,
+                                    "start": 136,
+                                    "end": 165,
+                                    "anchorType": "LINK"
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "1959",
+                            "text": "",
+                            "type": "IMG",
+                            "href": null,
+                            "layout": "INSET_CENTER",
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": {
+                                "id": "1*U6ErkqKx37BD78GnhrddCQ.png",
+                                "originalWidth": 425,
+                                "originalHeight": 382
+                            }
+                        },
+                        {
+                            "name": "158c",
+                            "text": "Since the default environment file specifies the ggml-gpt4all-j-v1.3-groovy.bin LLM, download the first model and then create a new folder named models inside the privateGPT folder. Put the ggml-gpt4all-j-v1.3-groovy.bin file inside the models folder:",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 49,
+                                    "end": 80,
+                                    "anchorType": null
+                                },
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 145,
+                                    "end": 151,
+                                    "anchorType": null
+                                },
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 163,
+                                    "end": 173,
+                                    "anchorType": null
+                                },
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 190,
+                                    "end": 225,
+                                    "anchorType": null
+                                },
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 237,
+                                    "end": 243,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "b6c5",
+                            "text": "",
+                            "type": "IMG",
+                            "href": null,
+                            "layout": "INSET_CENTER",
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": {
+                                "id": "1*91VyGGHfeaLJfpDpXNv5tQ.png",
+                                "originalWidth": 470,
+                                "originalHeight": 205
+                            }
+                        },
+                        {
+                            "name": "0792",
+                            "text": "Preparing Your Data",
+                            "type": "H3",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "2b4e",
+                            "text": "If you look into the ingest.py file, you will notice the following code snippet:",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 21,
+                                    "end": 30,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "c704",
+                            "text": "    \".csv\": (CSVLoader, {}),\n    # \".docx\": (Docx2txtLoader, {}),\n    \".doc\": (UnstructuredWordDocumentLoader, {}),\n    \".docx\": (UnstructuredWordDocumentLoader, {}),\n    \".enex\": (EverNoteLoader, {}),\n    \".eml\": (UnstructuredEmailLoader, {}),\n    \".epub\": (UnstructuredEPubLoader, {}),\n    \".html\": (UnstructuredHTMLLoader, {}),\n    \".md\": (UnstructuredMarkdownLoader, {}),\n    \".odt\": (UnstructuredODTLoader, {}),\n    \".pdf\": (PDFMinerLoader, {}),\n    \".ppt\": (UnstructuredPowerPointLoader, {}),\n    \".pptx\": (UnstructuredPowerPointLoader, {}),\n    \".txt\": (TextLoader, {\"encoding\": \"utf8\"}),",
+                            "type": "PRE",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "3b98",
+                            "text": "This means privateGPT is able to support the following document types:",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "bbe5",
+                            "text": ".csv: CSV",
+                            "type": "ULI",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "CODE",
                                     "href": null,
                                     "userId": null,
                                     "start": 0,
@@ -143,246 +778,286 @@
                             "metadata": null
                         },
                         {
-                            "name": "ae7c",
-                            "text": "Installing Pandas AI using pip",
-                            "type": "H4",
+                            "name": "5dc4",
+                            "text": ".doc: Word Document",
+                            "type": "ULI",
                             "href": null,
                             "layout": null,
-                            "markups": [],
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "CODE",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 0,
+                                    "end": 4,
+                                    "anchorType": null
+                                }
+                            ],
                             "iframe": null,
                             "metadata": null
                         },
                         {
-                            "name": "51fe",
-                            "text": "pip install pandasai",
-                            "type": "PRE",
+                            "name": "1b3e",
+                            "text": ".docx: Word Document",
+                            "type": "ULI",
                             "href": null,
                             "layout": null,
-                            "markups": [],
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "CODE",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 0,
+                                    "end": 5,
+                                    "anchorType": null
+                                }
+                            ],
                             "iframe": null,
                             "metadata": null
                         },
                         {
-                            "name": "4f69",
-                            "text": "Our DataFrame contains information about various countries, including their GDP (in millions of USD) and happiness index scores. It consists of 10 rows and 3 columns:",
+                            "name": "9df7",
+                            "text": ".enex: EverNote",
+                            "type": "ULI",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "CODE",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 0,
+                                    "end": 5,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "21df",
+                            "text": ".eml: Email",
+                            "type": "ULI",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "CODE",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 0,
+                                    "end": 4,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "0760",
+                            "text": ".epub: EPub",
+                            "type": "ULI",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "CODE",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 0,
+                                    "end": 5,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "47fc",
+                            "text": ".html: HTML File",
+                            "type": "ULI",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "CODE",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 0,
+                                    "end": 5,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "fa8b",
+                            "text": ".md: Markdown",
+                            "type": "ULI",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "CODE",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 0,
+                                    "end": 3,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "54ef",
+                            "text": ".odt: Open Document Text",
+                            "type": "ULI",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "CODE",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 0,
+                                    "end": 4,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "8b7a",
+                            "text": ".pdf: Portable Document Format (PDF)",
+                            "type": "ULI",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "CODE",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 0,
+                                    "end": 4,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "59e9",
+                            "text": ".ppt : PowerPoint Document",
+                            "type": "ULI",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "CODE",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 0,
+                                    "end": 4,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "ef78",
+                            "text": ".pptx : PowerPoint Document",
+                            "type": "ULI",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "CODE",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 0,
+                                    "end": 5,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "ad2b",
+                            "text": ".txt: Text file (UTF-8)",
+                            "type": "ULI",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "CODE",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 0,
+                                    "end": 4,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "70de",
+                            "text": "Each type of document is specified with the respective document loader. For example, you use the UnstructuredWordDocumentLoader class to load .doc and .docx Word documents.",
                             "type": "P",
                             "href": null,
                             "layout": null,
-                            "markups": [],
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "CODE",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 97,
+                                    "end": 127,
+                                    "anchorType": null
+                                },
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 142,
+                                    "end": 146,
+                                    "anchorType": null
+                                },
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 151,
+                                    "end": 156,
+                                    "anchorType": null
+                                }
+                            ],
                             "iframe": null,
                             "metadata": null
                         },
                         {
-                            "name": "4b06",
-                            "text": "",
-                            "type": "IMG",
-                            "href": null,
-                            "layout": "INSET_CENTER",
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": {
-                                "id": "1*FvevlIS-mnRSvqg2Nq5JnQ.png",
-                                "originalWidth": 925,
-                                "originalHeight": 809
-                            }
-                        },
-                        {
-                            "name": "29ef",
-                            "text": "Importing PandasAI with OpenAI",
-                            "type": "H4",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "2656",
-                            "text": "In the next step, we’ll import the pandasai library that we installed earlier and then import the LLM (Large Language Model) feature. As of May 2023, pandasai only supports the OpenAI model, which we’ll be utilizing understand the data.",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "a57a",
-                            "text": "",
-                            "type": "IMG",
-                            "href": null,
-                            "layout": "INSET_CENTER",
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": {
-                                "id": "1*RsVA6lJngSkpSs_BB9yZAg.png",
-                                "originalWidth": 939,
-                                "originalHeight": 409
-                            }
-                        },
-                        {
-                            "name": "e33e",
-                            "text": "To use the OpenAI API, you must generate your own unique API key. If you haven’t done so already, you can easily create an account on the platform’s official website at platform.openai.com. Once you’ve created your account, you’ll receive an instant $5 credit that can be used to explore and experiment with the API.",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "a3ab",
-                            "text": "Initializing PandasAI and asking Question",
-                            "type": "H4",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "52ae",
-                            "text": "Afterwards, we’ll provide our OpenAI model to Pandas AI and ask various questions.",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "37d9",
-                            "text": "",
-                            "type": "IMG",
-                            "href": null,
-                            "layout": "INSET_CENTER",
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": {
-                                "id": "1*UtA6DMSuzKtKOX5mNyfhCA.png",
-                                "originalWidth": 940,
-                                "originalHeight": 226
-                            }
-                        },
-                        {
-                            "name": "7578",
-                            "text": "When using pandas_ai.run, two parameters are necessary: the dataframe you’re working with and the question you’re seeking an answer to, it returns the top 5 happiest countries based on the supplied dataframe.",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "8f1b",
-                            "text": "Asking Complex Questions",
-                            "type": "H4",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "6388",
-                            "text": "Let’s check whether it can draw the plots for us?",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "1495",
-                            "text": "",
-                            "type": "IMG",
-                            "href": null,
-                            "layout": "INSET_CENTER",
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": {
-                                "id": "1*0mLGIH_2j4K0OC9SZzNrZQ.png",
-                                "originalWidth": 940,
-                                "originalHeight": 153
-                            }
-                        },
-                        {
-                            "name": "140d",
-                            "text": "Yes it does plot the graph, based on the question I asked.",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "a242",
-                            "text": "",
-                            "type": "IMG",
-                            "href": null,
-                            "layout": "INSET_CENTER",
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": {
-                                "id": "1*zxjcTNyFUFSn2g9aeLrImw.png",
-                                "originalWidth": 900,
-                                "originalHeight": 863
-                            }
-                        },
-                        {
-                            "name": "d6ec",
-                            "text": "Let’s perform a complex task, removing NAN values from the below dataset:",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "48b0",
-                            "text": "",
-                            "type": "IMG",
-                            "href": null,
-                            "layout": "INSET_CENTER",
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": {
-                                "id": "1*5wd-jewNp91MNc69DPDe8Q.png",
-                                "originalWidth": 503,
-                                "originalHeight": 481
-                            }
-                        },
-                        {
-                            "name": "c589",
-                            "text": "This is the output we get:",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "a830",
-                            "text": "",
-                            "type": "IMG",
-                            "href": null,
-                            "layout": "INSET_CENTER",
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": {
-                                "id": "1*VAEUvjecOWIz5JLtMKLCDg.png",
-                                "originalWidth": 940,
-                                "originalHeight": 137
-                            }
-                        },
-                        {
-                            "name": "b01d",
-                            "text": "But when I print the df variable again, it does remove those NAN values from the dataset, removing that row entirely",
+                            "name": "fc32",
+                            "text": "By default, privateGPT comes with the state_of_the_union.txt file located in the source_documents folder. I am going to delete it and replace it with a document named Singapore.pdf.",
                             "type": "P",
                             "href": null,
                             "layout": null,
@@ -392,8 +1067,26 @@
                                     "type": "STRONG",
                                     "href": null,
                                     "userId": null,
-                                    "start": 21,
-                                    "end": 23,
+                                    "start": 38,
+                                    "end": 60,
+                                    "anchorType": null
+                                },
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 81,
+                                    "end": 97,
+                                    "anchorType": null
+                                },
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 167,
+                                    "end": 180,
                                     "anchorType": null
                                 }
                             ],
@@ -401,7 +1094,7 @@
                             "metadata": null
                         },
                         {
-                            "name": "9b78",
+                            "name": "f5fb",
                             "text": "",
                             "type": "IMG",
                             "href": null,
@@ -409,14 +1102,194 @@
                             "markups": [],
                             "iframe": null,
                             "metadata": {
-                                "id": "1*vomhvRkNY_B4v3M7bhoXJA.png",
-                                "originalWidth": 496,
-                                "originalHeight": 400
+                                "id": "1*yCu7c82LVfwcJL0rU5DkbQ.png",
+                                "originalWidth": 717,
+                                "originalHeight": 308
                             }
                         },
                         {
-                            "name": "f25e",
-                            "text": "The pandasai library offers an extensive range of possibilities, and you can explore them all by visiting their official repository page, which I’ve shared earlier.",
+                            "name": "757e",
+                            "text": "This document was created from https://en.wikipedia.org/wiki/Singapore. You can download any page from Wikipedia as a PDF document by clicking Tools | Download as PDF:",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": "",
+                                    "type": "A",
+                                    "href": "https://en.wikipedia.org/wiki/Singapore",
+                                    "userId": null,
+                                    "start": 31,
+                                    "end": 70,
+                                    "anchorType": "LINK"
+                                },
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 143,
+                                    "end": 148,
+                                    "anchorType": null
+                                },
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 151,
+                                    "end": 166,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "5e48",
+                            "text": "",
+                            "type": "IMG",
+                            "href": null,
+                            "layout": "INSET_CENTER",
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": {
+                                "id": "1*X6XCyUSXTtO6dUkQziL1Hw.png",
+                                "originalWidth": 1011,
+                                "originalHeight": 943
+                            }
+                        },
+                        {
+                            "name": "8b78",
+                            "text": "You can put any documents that are supported by privateGPT into the source_documents folder. For my example, I only put one document.",
+                            "type": "BQ",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 48,
+                                    "end": 58,
+                                    "anchorType": null
+                                },
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 68,
+                                    "end": 84,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "84e8",
+                            "text": "Creating the Embeddings for Your Documents",
+                            "type": "H3",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "00a5",
+                            "text": "Once your document(s) are in place, you are ready to create embeddings for your documents.",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "EM",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 60,
+                                    "end": 70,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "4ada",
+                            "text": "Creating embeddings refers to the process of generating vector representations for words, sentences, or other units of text. These vector representations capture semantic and syntactic information about the text, allowing machines to understand and process natural language more effectively.",
+                            "type": "BQ",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "cb51",
+                            "text": "Type the following in Terminal (the ingest.py file is provided in the privateGPT folder):",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 36,
+                                    "end": 45,
+                                    "anchorType": null
+                                },
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 70,
+                                    "end": 80,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "194a",
+                            "text": "$ python ingest.py ",
+                            "type": "PRE",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "fbb1",
+                            "text": "Depending on the machine you are using and the number of documents you put in the source_documents folder, the embedding processing may take quite a while to complete.",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 82,
+                                    "end": 98,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "ca70",
+                            "text": "When it is done, you will see something like this:",
                             "type": "P",
                             "href": null,
                             "layout": null,
@@ -425,9 +1298,9 @@
                             "metadata": null
                         },
                         {
-                            "name": "6d46",
-                            "text": "It’s important to note that working with pandasai involves OpenAI pricing, and you can find the most up-to-date pricing information on their website. As of May 2023, the pricing is approximately 1000 tokens per $0.0200 (for the GPT-3.5-Turbo Model). When posing a question, it’s crucial to remember that the entire dataframe is passed along with the question every time, so it may not be an ideal solution for handling large datasets.",
-                            "type": "H4",
+                            "name": "a572",
+                            "text": "Loading documents from source_documents\nLoaded 1 documents from source_documents\nSplit into 692 chunks of text (max. 500 characters each)\nUsing embedded DuckDB with persistence: data will be stored in: db",
+                            "type": "PRE",
                             "href": null,
                             "layout": null,
                             "markups": [],
@@ -435,12 +1308,458 @@
                             "metadata": null
                         },
                         {
-                            "name": "67b7",
-                            "text": "If you have any query feel free to ask me!",
+                            "name": "e1ec",
+                            "text": "The embeddings are saved in the db folder, in the form of Chroma DB:",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 32,
+                                    "end": 34,
+                                    "anchorType": null
+                                },
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 58,
+                                    "end": 67,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "a73a",
+                            "text": "",
+                            "type": "IMG",
+                            "href": null,
+                            "layout": "INSET_CENTER",
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": {
+                                "id": "1*jDrd-g5qCKOwzc9WZ6SS8A.png",
+                                "originalWidth": 467,
+                                "originalHeight": 230
+                            }
+                        },
+                        {
+                            "name": "b758",
+                            "text": "Chroma is the open-source embedding database.",
+                            "type": "BQ",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 0,
+                                    "end": 6,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "88ff",
+                            "text": "Asking Questions",
                             "type": "H3",
                             "href": null,
                             "layout": null,
                             "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "bb50",
+                            "text": "You are now ready to ask questions! Type the following command in Terminal:",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "407f",
+                            "text": "$ python privateGPT.py",
+                            "type": "PRE",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "8307",
+                            "text": "It will take a while for the model to be loaded. In the process you will see the following:",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "8ff1",
+                            "text": "Using embedded DuckDB with persistence: data will be stored in: db\ngptj_model_load: loading model from 'models/ggml-gpt4all-j-v1.3-groovy.bin' - please wait ...\ngptj_model_load: n_vocab = 50400\ngptj_model_load: n_ctx   = 2048\ngptj_model_load: n_embd  = 4096\ngptj_model_load: n_head  = 16\ngptj_model_load: n_layer = 28\ngptj_model_load: n_rot   = 64\ngptj_model_load: f16     = 2\ngptj_model_load: ggml ctx size = 4505.45 MB\ngptj_model_load: memory_size =   896.00 MB, n_mem = 57344\ngptj_model_load: ................................... done\ngptj_model_load: model size =  3609.38 MB / num tensors = 285\n\nEnter a query:",
+                            "type": "PRE",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "42a3",
+                            "text": "At the prompt, you can type in your question. I asked: “What is the population in Singapore?”. It took privateGPT quite a while to come up with the answer. Once it managed to find an answer, it give you the answer and cited the source for the answer:",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "EM",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 56,
+                                    "end": 92,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "c465",
+                            "text": "",
+                            "type": "IMG",
+                            "href": null,
+                            "layout": "INSET_CENTER",
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": {
+                                "id": "1*9Wy31PmzRCyjzPaWd6RcjQ.png",
+                                "originalWidth": 691,
+                                "originalHeight": 422
+                            }
+                        },
+                        {
+                            "name": "5bb3",
+                            "text": "You can continue to ask a follow-up question:",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "127c",
+                            "text": "",
+                            "type": "IMG",
+                            "href": null,
+                            "layout": "INSET_CENTER",
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": {
+                                "id": "1*1jGttohgkBUjwX58sYRBuQ.png",
+                                "originalWidth": 682,
+                                "originalHeight": 412
+                            }
+                        },
+                        {
+                            "name": "fc1e",
+                            "text": "If you like reading my articles and that it helped your career/study, please consider signing up as a Medium member. It is $5 a month, and it gives you unlimited access to all the articles (including mine) on Medium. If you sign up using the following link, I will earn a small commission (at no additional cost to you). Your support means that I will be able to devote more time on writing articles like this.",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 0,
+                                    "end": 410,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "5ef0",
+                            "text": "Join Medium with my referral link - Wei-Meng Lee\nRead every story from Wei-Meng Lee (and thousands of other writers on Medium). Your membership fee directly supports…weimenglee.medium.com",
+                            "type": "MIXTAPE_EMBED",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": "https://weimenglee.medium.com/membership",
+                                    "type": "A",
+                                    "href": "https://weimenglee.medium.com/membership",
+                                    "userId": null,
+                                    "start": 0,
+                                    "end": 187,
+                                    "anchorType": "LINK"
+                                },
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 0,
+                                    "end": 48,
+                                    "anchorType": null
+                                },
+                                {
+                                    "title": null,
+                                    "type": "EM",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 49,
+                                    "end": 166,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "e370",
+                            "text": "Summary",
+                            "type": "H3",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "64ef",
+                            "text": "While privateGPT is a currently a proof-of-concept, it looks promising, However, it is not ready for production. There are a couple of issues:",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "a0f5",
+                            "text": "Slow inferencing. It took a while to perform the text embedding, but this is acceptable as this is a one-time process. However, inferencing is slow, especially on slower machines. I used a M1 Mac with 32GB ram and it still took a while to churn out the answer.",
+                            "type": "ULI",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 0,
+                                    "end": 16,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "bc1b",
+                            "text": "Memory hog. privateGPT uses lots of memory, and after asking one or two questions, I will get an out-of-memory error, like this:",
+                            "type": "ULI",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 0,
+                                    "end": 10,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "5beb",
+                            "text": "segmentation fault python privateGPT.py. /Users/weimenglee/miniforge3/lib/python3.10/multiprocessing/resource_tracker.py:224: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown. warnings.warn(‘resource_tracker: There appear to be %d ‘",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "EM",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 0,
+                                    "end": 284,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "a433",
+                            "text": "Until the author of privateGPT fixes the above two issues, privateGPT remains an experiment to see how you can train your LLM without exposing your private data to the cloud.",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "1c74",
+                            "text": "Level Up Coding",
+                            "type": "H3",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "f85c",
+                            "text": "Thanks for being a part of our community! Before you go:",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "357f",
+                            "text": "👏 Clap for the story and follow the author 👉",
+                            "type": "ULI",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "a4ba",
+                            "text": "📰 View more content in the Level Up Coding publication",
+                            "type": "ULI",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": "",
+                                    "type": "A",
+                                    "href": "https://levelup.gitconnected.com/?utm_source=pub&utm_medium=post",
+                                    "userId": null,
+                                    "start": 28,
+                                    "end": 55,
+                                    "anchorType": "LINK"
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "1d51",
+                            "text": "💰 Free coding interview course ⇒ View Course",
+                            "type": "ULI",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": "",
+                                    "type": "A",
+                                    "href": "https://skilled.dev/?utm_source=luc&utm_medium=article",
+                                    "userId": null,
+                                    "start": 34,
+                                    "end": 45,
+                                    "anchorType": "LINK"
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "3bcd",
+                            "text": "🔔 Follow us: Twitter | LinkedIn | Newsletter",
+                            "type": "ULI",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": "",
+                                    "type": "A",
+                                    "href": "https://twitter.com/gitconnected",
+                                    "userId": null,
+                                    "start": 14,
+                                    "end": 21,
+                                    "anchorType": "LINK"
+                                },
+                                {
+                                    "title": "",
+                                    "type": "A",
+                                    "href": "https://www.linkedin.com/company/gitconnected",
+                                    "userId": null,
+                                    "start": 24,
+                                    "end": 32,
+                                    "anchorType": "LINK"
+                                },
+                                {
+                                    "title": "",
+                                    "type": "A",
+                                    "href": "https://newsletter.levelup.dev",
+                                    "userId": null,
+                                    "start": 35,
+                                    "end": 45,
+                                    "anchorType": "LINK"
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "3fff",
+                            "text": "🚀👉 Join the Level Up talent collective and find an amazing job",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": "",
+                                    "type": "A",
+                                    "href": "https://jobs.levelup.dev/talent/welcome?referral=true",
+                                    "userId": null,
+                                    "start": 5,
+                                    "end": 64,
+                                    "anchorType": "LINK"
+                                },
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 5,
+                                    "end": 64,
+                                    "anchorType": null
+                                }
+                            ],
                             "iframe": null,
                             "metadata": null
                         }

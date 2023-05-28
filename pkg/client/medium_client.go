@@ -14,7 +14,7 @@ import (
 )
 
 func PostData(postId string) (*entities.MediumResponse, error) {
-	if config.Conf.Env == "devd" {
+	if config.Conf.Env == "dev" {
 		file, err := os.ReadFile("response.json")
 		if err != nil {
 			return nil, err
