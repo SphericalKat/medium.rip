@@ -30,7 +30,12 @@ func show(c *fiber.Ctx) error {
 
 	desc := ""
 	if len(paragraphs) >= 0 {
-		desc = paragraphs[1].Text
+		for _, p := range paragraphs {
+			if p.Type == "H3" || p.Type == "P" {
+				desc = p.Text
+				break
+			}
+		}
 	}
 
 	imgUrl := ""
