@@ -36,7 +36,7 @@ func ranges(text string, markups []entities.Markup) []RangeWithMarkup {
 
 	// include the start and end indexes of the text
 	markupBoundaries = append([]int{0}, markupBoundaries...)
-	markupBoundaries = append(markupBoundaries, len(text))
+	markupBoundaries = append(markupBoundaries, len([]rune(text)))
 
 	// remove duplicates
 	markupBoundaries = unique(markupBoundaries)
@@ -72,7 +72,8 @@ func ranges(text string, markups []entities.Markup) []RangeWithMarkup {
 func ConvertMarkup(text string, markups []entities.Markup) string {
 	var markedUp strings.Builder
 	for _, r := range ranges(text, markups) {
-		textToWrap := string(text[r.Range[0]:r.Range[1]])
+		runeText := []rune(text) // very important otherwise we can't handle UTF-8
+		textToWrap := string(runeText[r.Range[0]:r.Range[1]])
 		markedUp.WriteString(wrapInMarkups(textToWrap, r.Markups))
 	}
 
