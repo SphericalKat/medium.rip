@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/styles.css">
-    <title>{{ .Title }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>RIP Medium</title>
 </head>
-<body>
-    <h1 class="text-2xl">Hello, World!</h1>
+
+<body class="flex justify-center">
+    <article class="flex flex-col h-full w-full justify-center prose">
+        <div>
+            <h1>Medium.rip</h1>
+            <h2>An alternative frontend to Medium</h2>
+        </div>
+
+        <section>
+            <h2>How-To</h2>
+            <p>To view a Medium post simply replace <code class="">medium.com</code> with <code
+                    class="highlight">medium.rip</code></p>
+            <p>If the URL is: <code><span class="">medium.com</span>/@user/my-post-09a6af907a2</code> change it
+                to <code><span class="">medium.rip</span>/@user/my-post-09a6af907a2</code></p>
+        </section>
+    </article>
 </body>
+
 </html>

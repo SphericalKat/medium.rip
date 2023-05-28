@@ -18,20 +18,3 @@ html, body {
         line-height: 1.7777778;
     }
 }
-
-body {
-    /* background-color: #1f222a; */
-    /* color: #ffffff; */
-    /* line-height: 1.54;
-    letter-spacing: -0.02em;
-    font-variant-ligatures: contextual;
-    font-size: 1rem; */
-}
-
-.text-accent {
-    color: var(--accent);
-}
-
-.bg-accent {
-    background: var(--accent);
-}
