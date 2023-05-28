@@ -56,3 +56,22 @@ func TestRanges(t *testing.T) {
 		t.Errorf("Expected markup to be empty, got %v", ranges[3].Markups)
 	}
 }
+
+func TestConvert(t *testing.T) {
+	markup := Convert("strong and emphasized only", []entities.Markup{
+		{
+			Type:  "STRONG",
+			Start: 0,
+			End:   10,
+		},
+		{
+			Type:  "EM",
+			Start: 7,
+			End:   21,
+		},
+	})
+
+	if markup != "<strong>strong </strong><em><strong>and</strong></em><em> emphasized</em> only" {
+		t.Errorf("Expected markup to be <strong>strong </strong><em><strong>and</strong></em><em> emphasized</em> only, got %s", markup)
+	}
+}

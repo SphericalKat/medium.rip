@@ -1,7 +1,9 @@
 package converters
 
 import (
+	"fmt"
 	"sort"
+	"strings"
 
 	"github.com/medium.rip/pkg/entities"
 )
@@ -67,20 +69,40 @@ func ranges(text string, markups []entities.Markup) []RangeWithMarkup {
 	return ranges
 }
 
-func Convert(text string, markups []entities.Markup) {
-	// for _, m := range markups {
-	// 	switch m.Type {
-	// 	case "A":
-	// 		if m.Href != nil {
+func Convert(text string, markups []entities.Markup) string {
+	var markedUp strings.Builder
+	for _, r := range ranges(text, markups) {
+		textToWrap := string(text[r.Range[0]:r.Range[1]])
+		markedUp.WriteString(WrapInMarkups(textToWrap, r.Markups))
+	}
 
-	// 		} else if {
-	// 			m.UserID != nil {
+	return markedUp.String()
+}
 
-	// 			}
-	// 		}
-	// 	case "CODE":
-	// 	case "EM":
-	// 	case "STRONG":
-	// 	}
-	// }
+func WrapInMarkups(child string, markups []entities.Markup) string {
+	if len(markups) == 0 {
+		return child
+	}
+	markedUp := markupNodeInContainer(child, markups[0])
+	return WrapInMarkups(markedUp, markups[1:])
+}
+
+func markupNodeInContainer(child string, markup entities.Markup) string {
+	switch markup.Type {
+	case "A":
+		if markup.Href != nil {
+			return fmt.Sprintf(`<a href="%s">%s</a>`, *markup.Href, child)
+		} else if markup.UserID != nil {
+			return fmt.Sprintf(`<a href="https://medium.com/u/%s">%s</a>`, markup.UserID, child)
+		}
+	case "CODE":
+		return fmt.Sprintf(`<code>%s</code>`, child)
+	case "EM":
+		return fmt.Sprintf(`<em>%s</em>`, child)
+	case "STRONG":
+		return fmt.Sprintf(`<strong>%s</strong>`, child)
+	default:
+		return fmt.Sprintf(`<code>%s</code>`, child)
+	}
+	return child
 }
