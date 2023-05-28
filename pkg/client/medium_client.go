@@ -14,7 +14,7 @@ import (
 )
 
 func PostData(postId string) (*entities.MediumResponse, error) {
-	if config.Conf.Env == "dev" {
+	if config.Conf.Env == "devd" {
 		file, err := os.ReadFile("response.json")
 		if err != nil {
 			return nil, err
@@ -33,49 +33,7 @@ func PostData(postId string) (*entities.MediumResponse, error) {
 	url := "https://medium.com/_/graphql"
 	method := "POST"
 
-	payload := strings.NewReader(fmt.Sprintf(`query {
-        post(id: "%s") {
-          title
-          createdAt
-          creator {
-            id
-            name
-          }
-          content {
-            bodyModel {
-              paragraphs {
-                name
-                text
-                type
-                href
-                layout
-                markups {
-                  title
-                  type
-                  href
-                  userId
-                  start
-                  end
-                  anchorType
-                }
-                iframe {
-                  mediaResource {
-                    href
-                    iframeSrc
-                    iframeWidth
-                    iframeHeight
-                  }
-                }
-                metadata {
-                  id
-                  originalWidth
-                  originalHeight
-                }
-              }
-            }
-          }
-        }
-      }`, postId))
+	payload := strings.NewReader(fmt.Sprintf("{\"query\":\"query {\\n        post(id: \\\"%s\\\") {\\n          title\\n          createdAt\\n          creator {\\n            id\\n            name\\n          }\\n          content {\\n            bodyModel {\\n              paragraphs {\\n                name\\n                text\\n                type\\n                href\\n                layout\\n                markups {\\n                  title\\n                  type\\n                  href\\n                  userId\\n                  start\\n                  end\\n                  anchorType\\n                }\\n                iframe {\\n                  mediaResource {\\n                    href\\n                    iframeSrc\\n                    iframeWidth\\n                    iframeHeight\\n                  }\\n                }\\n                metadata {\\n                  id\\n                  originalWidth\\n                  originalHeight\\n                }\\n              }\\n            }\\n          }\\n        }\\n      }\",\"variables\":{}}", postId))
 
 	client := &http.Client{}
 	req, err := http.NewRequest(method, url, payload)

@@ -10,9 +10,9 @@ import (
 )
 
 func show(c *fiber.Ctx) error {
-	postId := c.Params("id", "")
+	postId := converters.ConvertId(c)
 	if postId == "" {
-		return c.Redirect("/")
+		return c.Status(422).SendString("Invalid post ID")
 	}
 
 	e, err := client.PostData(postId)
@@ -42,5 +42,5 @@ func index(c *fiber.Ctx) error {
 
 func RegisterRoutes(app *fiber.App) {
 	app.Get("/", index)
-	app.Get("/:id", show)
+	app.Get("/*", show)
 }
