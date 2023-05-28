@@ -9,20 +9,20 @@ import (
 )
 
 type RangeWithMarkup struct {
-	Range  []int
+	Range   []int
 	Markups []entities.Markup
 }
 
 func unique(intSlice []int) []int {
-    keys := make(map[int]bool)
-    list := []int{}	
-    for _, entry := range intSlice {
-        if _, value := keys[entry]; !value {
-            keys[entry] = true
-            list = append(list, entry)
-        }
-    }    
-    return list
+	keys := make(map[int]bool)
+	list := []int{}
+	for _, entry := range intSlice {
+		if _, value := keys[entry]; !value {
+			keys[entry] = true
+			list = append(list, entry)
+		}
+	}
+	return list
 }
 
 func ranges(text string, markups []entities.Markup) []RangeWithMarkup {
@@ -54,14 +54,14 @@ func ranges(text string, markups []entities.Markup) []RangeWithMarkup {
 		// check if this markup is covered by the range
 		coveredMarkups := make([]entities.Markup, 0)
 		for _, m := range markups {
-			if (int(m.Start) >= start && int(m.Start) < end) || (int(m.End - 1) >= start && int(m.End - 1) < end) {
+			if (int(m.Start) >= start && int(m.Start) < end) || (int(m.End-1) >= start && int(m.End-1) < end) {
 				coveredMarkups = append(coveredMarkups, m)
 			}
 		}
 
 		// append the range
 		ranges = append(ranges, RangeWithMarkup{
-			Range: []int{start, end},
+			Range:   []int{start, end},
 			Markups: coveredMarkups,
 		})
 	}
@@ -69,22 +69,22 @@ func ranges(text string, markups []entities.Markup) []RangeWithMarkup {
 	return ranges
 }
 
-func Convert(text string, markups []entities.Markup) string {
+func ConvertMarkup(text string, markups []entities.Markup) string {
 	var markedUp strings.Builder
 	for _, r := range ranges(text, markups) {
 		textToWrap := string(text[r.Range[0]:r.Range[1]])
-		markedUp.WriteString(WrapInMarkups(textToWrap, r.Markups))
+		markedUp.WriteString(wrapInMarkups(textToWrap, r.Markups))
 	}
 
 	return markedUp.String()
 }
 
-func WrapInMarkups(child string, markups []entities.Markup) string {
+func wrapInMarkups(child string, markups []entities.Markup) string {
 	if len(markups) == 0 {
 		return child
 	}
 	markedUp := markupNodeInContainer(child, markups[0])
-	return WrapInMarkups(markedUp, markups[1:])
+	return wrapInMarkups(markedUp, markups[1:])
 }
 
 func markupNodeInContainer(child string, markup entities.Markup) string {

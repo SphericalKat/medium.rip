@@ -58,7 +58,7 @@ func TestRanges(t *testing.T) {
 }
 
 func TestConvert(t *testing.T) {
-	markup := Convert("strong and emphasized only", []entities.Markup{
+	markup := ConvertMarkup("strong and emphasized only", []entities.Markup{
 		{
 			Type:  "STRONG",
 			Start: 0,

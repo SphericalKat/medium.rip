@@ -14,21 +14,14 @@
         rel="stylesheet">
 
     <title>{{ .Title }}</title>
-  <link rel="stylesheet" href="/assets/show-7a43d2b5.css">
+  <link rel="stylesheet" href="/assets/show-9b4da228.css">
 </head>
 
 <body class="flex flex-col h-full w-full items-center">
-    <article class="prose lg:prose-xl pt-20">
+    <article class="prose lg:prose-xl p-20">
         <h2 class="text-2xl">{{.Title}}</h2>
         <p><a href="https://medium.com/u/{{.UserId}}">{{.Author}}</a> on {{.PublishDate}}</p>
-        {{range .Nodes}}
-            {{if eq .Type "H3"}}
-                <h3>{{.Text}}</h3>
-            {{end}}
-            {{if eq .Type "IMG"}}
-                
-            {{end}}
-        {{end}}
+        {{.Paragraphs}}
     </article>
 </body>
 
