@@ -40,19 +40,7 @@ func (i *Image) width() int64 {
 }
 
 func (i *Image) src() string {
-	return fmt.Sprintf("%s/%d/%d/%s", IMAGE_HOST, i.width(), i.height(), i.ID)
-}
-
-func (i *Image) height() int64 {
-	if i.OriginalWidth > MAX_WIDTH {
-		return i.OriginalHeight * int64(i.ratio())
-	} else {
-		return i.OriginalHeight
-	}
-}
-
-func (i *Image) ratio() float32 {
-	return float32(MAX_WIDTH) / float32(i.OriginalWidth)
+	return fmt.Sprintf("https://miro.medium.com/v2/resize:fit:1200/%s", i.ID)
 }
 
 func ConvertParagraphs(paragraphs []entities.Paragraph) string {
