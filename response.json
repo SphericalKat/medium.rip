@@ -1,18 +1,18 @@
 {
     "data": {
         "post": {
-            "title": "Training Your Own LLM using privateGPT",
-            "createdAt": 1684461025636,
+            "title": "Improving Performance with HTTP Streaming",
+            "createdAt": 1684264387622,
             "creator": {
-                "id": "6599e1e08a48",
-                "name": "Wei-Meng Lee"
+                "id": "e46fded15590",
+                "name": "Victor"
             },
             "content": {
                 "bodyModel": {
                     "paragraphs": [
                         {
-                            "name": "c634",
-                            "text": "Training Your Own LLM using privateGPT",
+                            "name": "2f94",
+                            "text": "Improving Performance with HTTP Streaming",
                             "type": "H3",
                             "href": null,
                             "layout": null,
@@ -21,51 +21,8 @@
                             "metadata": null
                         },
                         {
-                            "name": "7cfe",
-                            "text": "Learn how to train your own language model without exposing your private data to the provider",
-                            "type": "H4",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "352a",
-                            "text": "Photo by Richard Bell on Unsplash",
-                            "type": "IMG",
-                            "href": null,
-                            "layout": "INSET_CENTER",
-                            "markups": [
-                                {
-                                    "title": "",
-                                    "type": "A",
-                                    "href": "https://unsplash.com/@maplerockdesign?utm_source=medium&utm_medium=referral",
-                                    "userId": null,
-                                    "start": 9,
-                                    "end": 21,
-                                    "anchorType": "LINK"
-                                },
-                                {
-                                    "title": "",
-                                    "type": "A",
-                                    "href": "https://unsplash.com?utm_source=medium&utm_medium=referral",
-                                    "userId": null,
-                                    "start": 25,
-                                    "end": 33,
-                                    "anchorType": "LINK"
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": {
-                                "id": "0*1WQcFWt4MSaUNJ0O",
-                                "originalWidth": 6000,
-                                "originalHeight": 4000
-                            }
-                        },
-                        {
-                            "name": "4323",
-                            "text": "One of the major concerns of using public AI services such as OpenAI’s ChatGPT is the risk of exposing your private data to the provider. For commercial use, this remains the biggest concerns for companies considering adopting AI technologies.",
+                            "name": "7a08",
+                            "text": "How HTTP Streaming can improve page performance and how Airbnb enabled it on an existing codebase",
                             "type": "P",
                             "href": null,
                             "layout": null,
@@ -74,106 +31,8 @@
                             "metadata": null
                         },
                         {
-                            "name": "4b02",
-                            "text": "Many times, you want to create your own language model that are trained on your set of data (such as sales insights, customers feedback, etc), but at the same time you do not want to expose all these sensitive data to a AI provider such as OpenAI. So the ideal way is to train your own LLM locally, without needing to upload your data to the cloud.",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "d132",
-                            "text": "If your data is public and you don’t mind exposing them to ChatGPT, I have another article that shows how you can connect ChatGPT with your own data:",
-                            "type": "BQ",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "c872",
-                            "text": "Connecting ChatGPT with Your Own Data using LlamaIndex\nLearn how to create your own chatbot for your businesslevelup.gitconnected.com",
-                            "type": "MIXTAPE_EMBED",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": "https://levelup.gitconnected.com/connecting-chatgpt-with-your-own-data-using-llamaindex-663844c06653",
-                                    "type": "A",
-                                    "href": "https://levelup.gitconnected.com/connecting-chatgpt-with-your-own-data-using-llamaindex-663844c06653",
-                                    "userId": null,
-                                    "start": 0,
-                                    "end": 133,
-                                    "anchorType": "LINK"
-                                },
-                                {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 0,
-                                    "end": 54,
-                                    "anchorType": null
-                                },
-                                {
-                                    "title": null,
-                                    "type": "EM",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 55,
-                                    "end": 109,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "2b8a",
-                            "text": "In this article, I will show you how you can use an open-source project called privateGPT to utilize an LLM so that it can answer questions (like ChatGPT) based on your custom training data, all without sacrificing the privacy of your data.",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 79,
-                                    "end": 90,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "e4bf",
-                            "text": "It is important to note that privateGPT is currently a proof-of-concept and is not production ready.",
-                            "type": "BQ",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "d408",
-                            "text": "Downloading privateGPT",
-                            "type": "H3",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "9293",
-                            "text": "To try out privateGPT, you can go to GitHub using the following link: https://github.com/imartinez/privateGPT.",
+                            "name": "9dd1",
+                            "text": "By: Victor Lin",
                             "type": "P",
                             "href": null,
                             "layout": null,
@@ -181,732 +40,15 @@
                                 {
                                     "title": "",
                                     "type": "A",
-                                    "href": "https://github.com/imartinez/privateGPT",
-                                    "userId": null,
-                                    "start": 70,
-                                    "end": 109,
-                                    "anchorType": "LINK"
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "43ea",
-                            "text": "You can either download the repository by clicking on the Code | Download ZIP button:",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 58,
-                                    "end": 63,
-                                    "anchorType": null
-                                },
-                                {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 65,
-                                    "end": 77,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "9d34",
-                            "text": "",
-                            "type": "IMG",
-                            "href": null,
-                            "layout": "INSET_CENTER",
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": {
-                                "id": "1*aEAiprAOjwcTIS98QvVX7Q.png",
-                                "originalWidth": 1125,
-                                "originalHeight": 856
-                            }
-                        },
-                        {
-                            "name": "37bf",
-                            "text": "Or, if you have git installed on your system, use the following command in Terminal to clone the repository:",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 16,
-                                    "end": 19,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "062d",
-                            "text": "$ git clone https://github.com/imartinez/privateGPT",
-                            "type": "PRE",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "232d",
-                            "text": "Either case, once the repository is downloaded onto your computer, the privateGPT directory should have the following files and folder:",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 71,
-                                    "end": 81,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "e7ae",
-                            "text": "",
-                            "type": "IMG",
-                            "href": null,
-                            "layout": "INSET_CENTER",
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": {
-                                "id": "1*nmtDdyVdOqOTYLN1mNGE6g.png",
-                                "originalWidth": 161,
-                                "originalHeight": 187
-                            }
-                        },
-                        {
-                            "name": "9e09",
-                            "text": "Installing the Required Python Packages",
-                            "type": "H3",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "9e9e",
-                            "text": "privateGPT uses a number of Python packages. They are encapsulated in the requirements.txt file:",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 74,
-                                    "end": 90,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "a035",
-                            "text": "langchain==0.0.171\npygpt4all==1.1.0\nchromadb==0.3.23\nllama-cpp-python==0.1.50\nurllib3==2.0.2\npdfminer.six==20221105\npython-dotenv==1.0.0\nunstructured==0.6.6\nextract-msg==0.41.1\ntabulate==0.9.0\npandoc==2.3\npypandoc==1.11",
-                            "type": "PRE",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "248c",
-                            "text": "The easiest way to install them is to use pip:",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "CODE",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 42,
-                                    "end": 45,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "5b96",
-                            "text": "$ cd privateGPT\n$ pip install -r requirements.txt",
-                            "type": "PRE",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "8770",
-                            "text": "From my experimentation, some required Python packages may not be installed when you perform the installation above. You will know this later on when you try to run either the ingest.py or privateGPT.py file. In such instances, simply install the missing package individually.",
-                            "type": "BQ",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "a2c1",
-                            "text": "Editing the Environment file",
-                            "type": "H3",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "1e12",
-                            "text": "The example.env file contains several settings used by privateGPT. Here is its content:",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
+                                    "href": "https://www.linkedin.com/in/victorhlin/",
                                     "userId": null,
                                     "start": 4,
-                                    "end": 15,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "bc04",
-                            "text": "PERSIST_DIRECTORY=db\nMODEL_TYPE=GPT4All\nMODEL_PATH=models/ggml-gpt4all-j-v1.3-groovy.bin\nEMBEDDINGS_MODEL_NAME=all-MiniLM-L6-v2\nMODEL_N_CTX=1000",
-                            "type": "PRE",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "207e",
-                            "text": "PERSIST_DIRECTORY — the directory that will hold the local vector store after your documents are loaded and processed",
-                            "type": "ULI",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 0,
-                                    "end": 17,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "bd5d",
-                            "text": "MODEL_TYPE — the type of model you are using. Here, it is set to GPT4All (a free open-source alternative to ChatGPT by OpenAI).",
-                            "type": "ULI",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 0,
-                                    "end": 10,
-                                    "anchorType": null
-                                },
-                                {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 65,
-                                    "end": 72,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "ed03",
-                            "text": "MODEL_PATH — the path where the LLM is located. Here it is set to the models directory and the model used is ggml-gpt4all-j-v1.3-groovy.bin (you will learn where to download this model in the next section)",
-                            "type": "ULI",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 0,
-                                    "end": 10,
-                                    "anchorType": null
-                                },
-                                {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 70,
-                                    "end": 76,
-                                    "anchorType": null
-                                },
-                                {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 109,
-                                    "end": 139,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "1afb",
-                            "text": "EMBEDDINGS_MODEL_NAME — this refers to the name of a transformer model. Here it is set to all-MiniLM-L6-v2, which maps sentences & paragraphs to a 384 dimensional dense vector space and can be used for tasks like clustering or semantic search.",
-                            "type": "ULI",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 0,
-                                    "end": 21,
-                                    "anchorType": null
-                                },
-                                {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 90,
-                                    "end": 106,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "046b",
-                            "text": "MODEL_N_CTX — Maximum token limit for both embeddings and LLM models",
-                            "type": "ULI",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 0,
-                                    "end": 11,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "1780",
-                            "text": "Rename the example.env to .env.",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 11,
-                                    "end": 22,
-                                    "anchorType": null
-                                },
-                                {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 26,
-                                    "end": 30,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "5ab7",
-                            "text": "Once this is done, the .env file will become a hidden file.",
-                            "type": "BQ",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "e1f7",
-                            "text": "Downloading the Model",
-                            "type": "H3",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "5202",
-                            "text": "In order for privateGPT to work, it needs to pre-trained model (a LLM). As privateGPT is using GPT4All, you can download the LLMs from: https://gpt4all.io/index.html:",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": "",
-                                    "type": "A",
-                                    "href": "https://gpt4all.io/index.html",
-                                    "userId": null,
-                                    "start": 136,
-                                    "end": 165,
+                                    "end": 14,
                                     "anchorType": "LINK"
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "1959",
-                            "text": "",
-                            "type": "IMG",
-                            "href": null,
-                            "layout": "INSET_CENTER",
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": {
-                                "id": "1*U6ErkqKx37BD78GnhrddCQ.png",
-                                "originalWidth": 425,
-                                "originalHeight": 382
-                            }
-                        },
-                        {
-                            "name": "158c",
-                            "text": "Since the default environment file specifies the ggml-gpt4all-j-v1.3-groovy.bin LLM, download the first model and then create a new folder named models inside the privateGPT folder. Put the ggml-gpt4all-j-v1.3-groovy.bin file inside the models folder:",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 49,
-                                    "end": 80,
-                                    "anchorType": null
                                 },
                                 {
                                     "title": null,
                                     "type": "STRONG",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 145,
-                                    "end": 151,
-                                    "anchorType": null
-                                },
-                                {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 163,
-                                    "end": 173,
-                                    "anchorType": null
-                                },
-                                {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 190,
-                                    "end": 225,
-                                    "anchorType": null
-                                },
-                                {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 237,
-                                    "end": 243,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "b6c5",
-                            "text": "",
-                            "type": "IMG",
-                            "href": null,
-                            "layout": "INSET_CENTER",
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": {
-                                "id": "1*91VyGGHfeaLJfpDpXNv5tQ.png",
-                                "originalWidth": 470,
-                                "originalHeight": 205
-                            }
-                        },
-                        {
-                            "name": "0792",
-                            "text": "Preparing Your Data",
-                            "type": "H3",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "2b4e",
-                            "text": "If you look into the ingest.py file, you will notice the following code snippet:",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 21,
-                                    "end": 30,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "c704",
-                            "text": "    \".csv\": (CSVLoader, {}),\n    # \".docx\": (Docx2txtLoader, {}),\n    \".doc\": (UnstructuredWordDocumentLoader, {}),\n    \".docx\": (UnstructuredWordDocumentLoader, {}),\n    \".enex\": (EverNoteLoader, {}),\n    \".eml\": (UnstructuredEmailLoader, {}),\n    \".epub\": (UnstructuredEPubLoader, {}),\n    \".html\": (UnstructuredHTMLLoader, {}),\n    \".md\": (UnstructuredMarkdownLoader, {}),\n    \".odt\": (UnstructuredODTLoader, {}),\n    \".pdf\": (PDFMinerLoader, {}),\n    \".ppt\": (UnstructuredPowerPointLoader, {}),\n    \".pptx\": (UnstructuredPowerPointLoader, {}),\n    \".txt\": (TextLoader, {\"encoding\": \"utf8\"}),",
-                            "type": "PRE",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "3b98",
-                            "text": "This means privateGPT is able to support the following document types:",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "bbe5",
-                            "text": ".csv: CSV",
-                            "type": "ULI",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "CODE",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 0,
-                                    "end": 4,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "5dc4",
-                            "text": ".doc: Word Document",
-                            "type": "ULI",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "CODE",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 0,
-                                    "end": 4,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "1b3e",
-                            "text": ".docx: Word Document",
-                            "type": "ULI",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "CODE",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 0,
-                                    "end": 5,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "9df7",
-                            "text": ".enex: EverNote",
-                            "type": "ULI",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "CODE",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 0,
-                                    "end": 5,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "21df",
-                            "text": ".eml: Email",
-                            "type": "ULI",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "CODE",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 0,
-                                    "end": 4,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "0760",
-                            "text": ".epub: EPub",
-                            "type": "ULI",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "CODE",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 0,
-                                    "end": 5,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "47fc",
-                            "text": ".html: HTML File",
-                            "type": "ULI",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "CODE",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 0,
-                                    "end": 5,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "fa8b",
-                            "text": ".md: Markdown",
-                            "type": "ULI",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "CODE",
                                     "href": null,
                                     "userId": null,
                                     "start": 0,
@@ -918,183 +60,7 @@
                             "metadata": null
                         },
                         {
-                            "name": "54ef",
-                            "text": ".odt: Open Document Text",
-                            "type": "ULI",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "CODE",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 0,
-                                    "end": 4,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "8b7a",
-                            "text": ".pdf: Portable Document Format (PDF)",
-                            "type": "ULI",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "CODE",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 0,
-                                    "end": 4,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "59e9",
-                            "text": ".ppt : PowerPoint Document",
-                            "type": "ULI",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "CODE",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 0,
-                                    "end": 4,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "ef78",
-                            "text": ".pptx : PowerPoint Document",
-                            "type": "ULI",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "CODE",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 0,
-                                    "end": 5,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "ad2b",
-                            "text": ".txt: Text file (UTF-8)",
-                            "type": "ULI",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "CODE",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 0,
-                                    "end": 4,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "70de",
-                            "text": "Each type of document is specified with the respective document loader. For example, you use the UnstructuredWordDocumentLoader class to load .doc and .docx Word documents.",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "CODE",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 97,
-                                    "end": 127,
-                                    "anchorType": null
-                                },
-                                {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 142,
-                                    "end": 146,
-                                    "anchorType": null
-                                },
-                                {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 151,
-                                    "end": 156,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "fc32",
-                            "text": "By default, privateGPT comes with the state_of_the_union.txt file located in the source_documents folder. I am going to delete it and replace it with a document named Singapore.pdf.",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 38,
-                                    "end": 60,
-                                    "anchorType": null
-                                },
-                                {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 81,
-                                    "end": 97,
-                                    "anchorType": null
-                                },
-                                {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 167,
-                                    "end": 180,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "f5fb",
+                            "name": "3351",
                             "text": "",
                             "type": "IMG",
                             "href": null,
@@ -1102,95 +68,14 @@
                             "markups": [],
                             "iframe": null,
                             "metadata": {
-                                "id": "1*yCu7c82LVfwcJL0rU5DkbQ.png",
-                                "originalWidth": 717,
-                                "originalHeight": 308
+                                "id": "1*q2A2ZjnULygCKIWuiSBKXg.jpeg",
+                                "originalWidth": 1440,
+                                "originalHeight": 960
                             }
                         },
                         {
-                            "name": "757e",
-                            "text": "This document was created from https://en.wikipedia.org/wiki/Singapore. You can download any page from Wikipedia as a PDF document by clicking Tools | Download as PDF:",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": "",
-                                    "type": "A",
-                                    "href": "https://en.wikipedia.org/wiki/Singapore",
-                                    "userId": null,
-                                    "start": 31,
-                                    "end": 70,
-                                    "anchorType": "LINK"
-                                },
-                                {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 143,
-                                    "end": 148,
-                                    "anchorType": null
-                                },
-                                {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 151,
-                                    "end": 166,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "5e48",
-                            "text": "",
-                            "type": "IMG",
-                            "href": null,
-                            "layout": "INSET_CENTER",
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": {
-                                "id": "1*X6XCyUSXTtO6dUkQziL1Hw.png",
-                                "originalWidth": 1011,
-                                "originalHeight": 943
-                            }
-                        },
-                        {
-                            "name": "8b78",
-                            "text": "You can put any documents that are supported by privateGPT into the source_documents folder. For my example, I only put one document.",
-                            "type": "BQ",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 48,
-                                    "end": 58,
-                                    "anchorType": null
-                                },
-                                {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 68,
-                                    "end": 84,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "84e8",
-                            "text": "Creating the Embeddings for Your Documents",
+                            "name": "715f",
+                            "text": "Introduction",
                             "type": "H3",
                             "href": null,
                             "layout": null,
@@ -1199,8 +84,338 @@
                             "metadata": null
                         },
                         {
-                            "name": "00a5",
-                            "text": "Once your document(s) are in place, you are ready to create embeddings for your documents.",
+                            "name": "a054",
+                            "text": "You may have heard a joke that the Internet is a series of tubes. In this blog post, we’re going to talk about how we get a cool, refreshing stream of Airbnb.com bytes into your browser as quickly as possible using HTTP Streaming.",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": "",
+                                    "type": "A",
+                                    "href": "https://en.wikipedia.org/wiki/Series_of_tubes",
+                                    "userId": null,
+                                    "start": 35,
+                                    "end": 64,
+                                    "anchorType": "LINK"
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "f9bf",
+                            "text": "Let’s first understand what streaming means. Imagine we had a spigot and two options:",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "7ad4",
+                            "text": "Fill a big cup, and then pour it all down the tube (the “buffered” strategy)",
+                            "type": "ULI",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "4438",
+                            "text": "Connect the spigot directly to the tube (the “streaming” strategy)",
+                            "type": "ULI",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "f095",
+                            "text": "In the buffered strategy, everything happens sequentially — our servers first generate the entire response into a buffer (filling the cup), and then more time is spent sending it over the network (pouring it down). The streaming strategy happens in parallel. We break the response into chunks, which are sent as soon as they are ready. The server can start working on the next chunk while previous chunks are still being sent, and the client (e.g, a browser) can begin handling the response before it has been fully received.",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "d6eb",
+                            "text": "Implementing Streaming at Airbnb",
+                            "type": "H3",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "ca5b",
+                            "text": "Streaming has clear advantages, but most websites today still rely on a buffered approach to generate responses. One reason for this is the additional engineering effort required to break the page into independent chunks. This just isn’t feasible sometimes. For example, if all of the content on the page relies on a slow backend query, then we won’t be able to send anything until that query finishes.",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "806e",
+                            "text": "However, there’s one use case that’s universally applicable. We can use streaming to reduce network waterfalls. This term refers to when one network request triggers another, resulting in a cascading series of sequential requests. This is easily visualized in a tool like Chrome’s Waterfall:",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": "",
+                                    "type": "A",
+                                    "href": "https://developer.chrome.com/docs/devtools/network/reference/#waterfall",
+                                    "userId": null,
+                                    "start": 281,
+                                    "end": 290,
+                                    "anchorType": "LINK"
+                                },
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 92,
+                                    "end": 110,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "77db",
+                            "text": "Chrome Network Waterfall illustrating a cascade of sequential requests",
+                            "type": "IMG",
+                            "href": null,
+                            "layout": "INSET_CENTER",
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": {
+                                "id": "1*qhOyK4HxTnhImOTPhSA4DQ.png",
+                                "originalWidth": 1592,
+                                "originalHeight": 1062
+                            }
+                        },
+                        {
+                            "name": "bde8",
+                            "text": "Most web pages rely on external JavaScript and CSS files linked within the HTML, resulting in a network waterfall — downloading the HTML triggers JavaScript and CSS downloads. As a result, it’s a best practice to place all CSS and JavaScript tags near the beginning of the HTML in the <head> tag. This ensures that the browser sees them earlier. With streaming, we can reduce this delay further, by sending that portion of the <head> tag first.",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "CODE",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 285,
+                                    "end": 291,
+                                    "anchorType": null
+                                },
+                                {
+                                    "title": null,
+                                    "type": "CODE",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 427,
+                                    "end": 433,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "ea4f",
+                            "text": "Early Flush",
+                            "type": "H3",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "98d3",
+                            "text": "The most straightforward way to send an early <head> tag is by breaking a standard response into two parts. This technique is called Early Flush, as one part is sent (“flushed”) before the other.",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "CODE",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 46,
+                                    "end": 52,
+                                    "anchorType": null
+                                },
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 133,
+                                    "end": 144,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "3146",
+                            "text": "The first part contains things that are fast to compute and can be sent quickly. At Airbnb, we include tags for fonts, CSS, and JavaScript, so that we get the browser benefits mentioned above. The second part contains the rest of the page, including content that relies on API or database queries to compute. The end result looks like this:",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "7a7e",
+                            "text": "Early chunk:",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "d80f",
+                            "text": "<html>\n  <head>\n    <script src=… defer />\n    <link rel=”stylesheet” href=… />\n    <!--lots of other <meta> and other tags… ->",
+                            "type": "PRE",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "7ff4",
+                            "text": "Late chunk:",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "ef75",
+                            "text": "<!-- <head> tags that depend on data go here ->\n  </head>\n  <body>\n    <! — Body content here →\n  </body>\n</html>",
+                            "type": "PRE",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "2ee9",
+                            "text": "We had to restructure our app to make this possible. For context, Airbnb uses an Express-based NodeJS server to render web pages using React. We previously had a single React component in charge of rendering the complete HTML document. However, this presented two problems:",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "9d43",
+                            "text": "Producing incremental chunks of content means we need to work with partial/unclosed HTML tags. For example, the examples you saw above are invalid HTML. The <html> and <head> tags are opened in the Early chunk, but closed in the Late chunk. There’s no way to generate this sort of output using the standard React rendering functions.",
+                            "type": "ULI",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "CODE",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 157,
+                                    "end": 163,
+                                    "anchorType": null
+                                },
+                                {
+                                    "title": null,
+                                    "type": "CODE",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 168,
+                                    "end": 174,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "5fca",
+                            "text": "We can’t render this component until we have all of the data for it.",
+                            "type": "ULI",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "904a",
+                            "text": "We solved these problems by breaking our monolithic component into three:",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "3763",
+                            "text": "an “Early <head>” component",
+                            "type": "ULI",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "bb0e",
+                            "text": "a “Late <head>” component, for <head> tags that depend on data",
+                            "type": "ULI",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "9f1c",
+                            "text": "a “<body>” component",
+                            "type": "ULI",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "03a1",
+                            "text": "Each component renders the contents of the head or body tag. Then we stitch them together by writing open/close tags directly to the HTTP response stream. Overall, the process looks like this:",
                             "type": "P",
                             "href": null,
                             "layout": null,
@@ -1210,8 +425,8 @@
                                     "type": "EM",
                                     "href": null,
                                     "userId": null,
-                                    "start": 60,
-                                    "end": 70,
+                                    "start": 27,
+                                    "end": 35,
                                     "anchorType": null
                                 }
                             ],
@@ -1219,9 +434,29 @@
                             "metadata": null
                         },
                         {
-                            "name": "4ada",
-                            "text": "Creating embeddings refers to the process of generating vector representations for words, sentences, or other units of text. These vector representations capture semantic and syntactic information about the text, allowing machines to understand and process natural language more effectively.",
-                            "type": "BQ",
+                            "name": "5565",
+                            "text": "Write <html><head>",
+                            "type": "OLI",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "CODE",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 6,
+                                    "end": 18,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "975a",
+                            "text": "Render and write the Early <head> to the response",
+                            "type": "OLI",
                             "href": null,
                             "layout": null,
                             "markups": [],
@@ -1229,28 +464,99 @@
                             "metadata": null
                         },
                         {
-                            "name": "cb51",
-                            "text": "Type the following in Terminal (the ingest.py file is provided in the privateGPT folder):",
+                            "name": "c5b9",
+                            "text": "Wait for data",
+                            "type": "OLI",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "4d15",
+                            "text": "Render and write the Late <head> to the response",
+                            "type": "OLI",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "c855",
+                            "text": "Write </head><body>",
+                            "type": "OLI",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "CODE",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 6,
+                                    "end": 19,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "b3e9",
+                            "text": "Render and write the <body> to the response",
+                            "type": "OLI",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "2388",
+                            "text": "Finish up by writing </body></html>",
+                            "type": "OLI",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "CODE",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 21,
+                                    "end": 35,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "364f",
+                            "text": "Data Streaming",
+                            "type": "H3",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "f357",
+                            "text": "Early Flush optimizes CSS and JavaScript network waterfalls. However, users will still be staring at a blank page until the <body> tag arrives. We’d like to improve this by rendering a loading state when there’s no data, which gets replaced once the data arrives. Conveniently, we already have loading states in this situation for client side routing, so we could accomplish this by just rendering the app without waiting for data!",
                             "type": "P",
                             "href": null,
                             "layout": null,
                             "markups": [
                                 {
                                     "title": null,
-                                    "type": "STRONG",
+                                    "type": "CODE",
                                     "href": null,
                                     "userId": null,
-                                    "start": 36,
-                                    "end": 45,
-                                    "anchorType": null
-                                },
-                                {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 70,
-                                    "end": 80,
+                                    "start": 124,
+                                    "end": 130,
                                     "anchorType": null
                                 }
                             ],
@@ -1258,38 +564,8 @@
                             "metadata": null
                         },
                         {
-                            "name": "194a",
-                            "text": "$ python ingest.py ",
-                            "type": "PRE",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "fbb1",
-                            "text": "Depending on the machine you are using and the number of documents you put in the source_documents folder, the embedding processing may take quite a while to complete.",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 82,
-                                    "end": 98,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "ca70",
-                            "text": "When it is done, you will see something like this:",
+                            "name": "4e58",
+                            "text": "Unfortunately, this causes another network waterfall. Browsers have to receive the SSR (Server-Side Render), and then JavaScript triggers another network request to fetch the actual data:",
                             "type": "P",
                             "href": null,
                             "layout": null,
@@ -1298,72 +574,33 @@
                             "metadata": null
                         },
                         {
-                            "name": "a572",
-                            "text": "Loading documents from source_documents\nLoaded 1 documents from source_documents\nSplit into 692 chunks of text (max. 500 characters each)\nUsing embedded DuckDB with persistence: data will be stored in: db",
-                            "type": "PRE",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "e1ec",
-                            "text": "The embeddings are saved in the db folder, in the form of Chroma DB:",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 32,
-                                    "end": 34,
-                                    "anchorType": null
-                                },
-                                {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 58,
-                                    "end": 67,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "a73a",
-                            "text": "",
+                            "name": "a4aa",
+                            "text": "Graph showing a network waterfall where SSR and client-side data fetch happen sequentially",
                             "type": "IMG",
                             "href": null,
                             "layout": "INSET_CENTER",
                             "markups": [],
                             "iframe": null,
                             "metadata": {
-                                "id": "1*jDrd-g5qCKOwzc9WZ6SS8A.png",
-                                "originalWidth": 467,
+                                "id": "1*6kTkLA-UnBm5UGayU0WAcw.png",
+                                "originalWidth": 1266,
                                 "originalHeight": 230
                             }
                         },
                         {
-                            "name": "b758",
-                            "text": "Chroma is the open-source embedding database.",
-                            "type": "BQ",
+                            "name": "6218",
+                            "text": "In our testing, this resulted in a slower total loading time.",
+                            "type": "P",
                             "href": null,
                             "layout": null,
                             "markups": [
                                 {
                                     "title": null,
-                                    "type": "STRONG",
+                                    "type": "EM",
                                     "href": null,
                                     "userId": null,
-                                    "start": 0,
-                                    "end": 6,
+                                    "start": 42,
+                                    "end": 47,
                                     "anchorType": null
                                 }
                             ],
@@ -1371,18 +608,8 @@
                             "metadata": null
                         },
                         {
-                            "name": "88ff",
-                            "text": "Asking Questions",
-                            "type": "H3",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "bb50",
-                            "text": "You are now ready to ask questions! Type the following command in Terminal:",
+                            "name": "44fa",
+                            "text": "What if we could include this data in the HTML? This would allow our server-side rendering and data fetching to happen in parallel:",
                             "type": "P",
                             "href": null,
                             "layout": null,
@@ -1391,8 +618,52 @@
                             "metadata": null
                         },
                         {
-                            "name": "407f",
-                            "text": "$ python privateGPT.py",
+                            "name": "7871",
+                            "text": "Graph showing SSR and client-side data fetch happening in parallel",
+                            "type": "IMG",
+                            "href": null,
+                            "layout": "INSET_CENTER",
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": {
+                                "id": "1*AKzOqc2Nd6BcrV-1LZbfxA.png",
+                                "originalWidth": 1184,
+                                "originalHeight": 172
+                            }
+                        },
+                        {
+                            "name": "b8bc",
+                            "text": "Given that we had already broken the page into two chunks with Early Flush, it’s relatively straightforward to introduce a third chunk for what we call Deferred Data. This chunk goes after all of the visible content and does not block rendering. We execute the network requests on the server and stream the responses into the Deferred Data chunk. In the end, our three chunks look like this:",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 152,
+                                    "end": 165,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "3cb8",
+                            "text": "Early chunk",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "501c",
+                            "text": "<html>\n  <head>\n    <link rel=”preload” as=”script” href=… />\n    <link rel=”stylesheet” href=… />\n    <! — lots of other <meta> and other tags… →",
                             "type": "PRE",
                             "href": null,
                             "layout": null,
@@ -1401,8 +672,8 @@
                             "metadata": null
                         },
                         {
-                            "name": "8307",
-                            "text": "It will take a while for the model to be loaded. In the process you will see the following:",
+                            "name": "a45c",
+                            "text": "Body chunk",
                             "type": "P",
                             "href": null,
                             "layout": null,
@@ -1411,8 +682,8 @@
                             "metadata": null
                         },
                         {
-                            "name": "8ff1",
-                            "text": "Using embedded DuckDB with persistence: data will be stored in: db\ngptj_model_load: loading model from 'models/ggml-gpt4all-j-v1.3-groovy.bin' - please wait ...\ngptj_model_load: n_vocab = 50400\ngptj_model_load: n_ctx   = 2048\ngptj_model_load: n_embd  = 4096\ngptj_model_load: n_head  = 16\ngptj_model_load: n_layer = 28\ngptj_model_load: n_rot   = 64\ngptj_model_load: f16     = 2\ngptj_model_load: ggml ctx size = 4505.45 MB\ngptj_model_load: memory_size =   896.00 MB, n_mem = 57344\ngptj_model_load: ................................... done\ngptj_model_load: model size =  3609.38 MB / num tensors = 285\n\nEnter a query:",
+                            "name": "8831",
+                            "text": "    <! — <head> tags that depend on data go here →\n  </head>\n  <body>\n     <! — Body content here →\n     <script src=… />",
                             "type": "PRE",
                             "href": null,
                             "layout": null,
@@ -1421,66 +692,48 @@
                             "metadata": null
                         },
                         {
-                            "name": "42a3",
-                            "text": "At the prompt, you can type in your question. I asked: “What is the population in Singapore?”. It took privateGPT quite a while to come up with the answer. Once it managed to find an answer, it give you the answer and cited the source for the answer:",
+                            "name": "6042",
+                            "text": "Deferred Data chunk",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "8667",
+                            "text": "    <script type=”application/json” >\n      <!-- data -->\n    </script> \n  </body>\n</html>",
+                            "type": "PRE",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "beef",
+                            "text": "With this implemented on the server, the only remaining task is to write some JavaScript to detect when our Deferred Data chunk arrives. We did this with a MutationObserver, which is an efficient way to observe DOM changes. Once the Deferred Data JSON element is detected, we parse the result and inject it into our application’s network data store. From the application’s perspective, it’s as though a normal network request has been completed.",
                             "type": "P",
                             "href": null,
                             "layout": null,
                             "markups": [
                                 {
-                                    "title": null,
-                                    "type": "EM",
-                                    "href": null,
+                                    "title": "",
+                                    "type": "A",
+                                    "href": "https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver",
                                     "userId": null,
-                                    "start": 56,
-                                    "end": 92,
-                                    "anchorType": null
+                                    "start": 156,
+                                    "end": 172,
+                                    "anchorType": "LINK"
                                 }
                             ],
                             "iframe": null,
                             "metadata": null
                         },
                         {
-                            "name": "c465",
-                            "text": "",
-                            "type": "IMG",
-                            "href": null,
-                            "layout": "INSET_CENTER",
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": {
-                                "id": "1*9Wy31PmzRCyjzPaWd6RcjQ.png",
-                                "originalWidth": 691,
-                                "originalHeight": 422
-                            }
-                        },
-                        {
-                            "name": "5bb3",
-                            "text": "You can continue to ask a follow-up question:",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "127c",
-                            "text": "",
-                            "type": "IMG",
-                            "href": null,
-                            "layout": "INSET_CENTER",
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": {
-                                "id": "1*1jGttohgkBUjwX58sYRBuQ.png",
-                                "originalWidth": 682,
-                                "originalHeight": 412
-                            }
-                        },
-                        {
-                            "name": "fc1e",
-                            "text": "If you like reading my articles and that it helped your career/study, please consider signing up as a Medium member. It is $5 a month, and it gives you unlimited access to all the articles (including mine) on Medium. If you sign up using the following link, I will earn a small commission (at no additional cost to you). Your support means that I will be able to devote more time on writing articles like this.",
+                            "name": "64b4",
+                            "text": "Watch out for `defer`",
                             "type": "P",
                             "href": null,
                             "layout": null,
@@ -1491,7 +744,7 @@
                                     "href": null,
                                     "userId": null,
                                     "start": 0,
-                                    "end": 410,
+                                    "end": 21,
                                     "anchorType": null
                                 }
                             ],
@@ -1499,46 +752,37 @@
                             "metadata": null
                         },
                         {
-                            "name": "5ef0",
-                            "text": "Join Medium with my referral link - Wei-Meng Lee\nRead every story from Wei-Meng Lee (and thousands of other writers on Medium). Your membership fee directly supports…weimenglee.medium.com",
-                            "type": "MIXTAPE_EMBED",
+                            "name": "3228",
+                            "text": "You may notice that some tags are re-ordered from the Early Flush example. The script tags moved from the Early chunk to the Body chunk and no longer have the defer attribute. This attribute avoids render-blocking script execution by deferring scripts until after the HTML has been downloaded and parsed. This is suboptimal when using Deferred Data, as all of the visible content has already been received by the end of the Body chunk, and we no longer worry about render-blocking at that point. We can fix this by moving the script tags to the end of the Body chunk, and removing the defer attribute. Moving the tags later in the document does introduce a network waterfall, which we solved by adding preload tags into the Early chunk.",
+                            "type": "P",
                             "href": null,
                             "layout": null,
                             "markups": [
                                 {
-                                    "title": "https://weimenglee.medium.com/membership",
+                                    "title": "",
                                     "type": "A",
-                                    "href": "https://weimenglee.medium.com/membership",
+                                    "href": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#attributes",
                                     "userId": null,
-                                    "start": 0,
-                                    "end": 187,
+                                    "start": 159,
+                                    "end": 174,
                                     "anchorType": "LINK"
                                 },
                                 {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
+                                    "title": "",
+                                    "type": "A",
+                                    "href": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/preload",
                                     "userId": null,
-                                    "start": 0,
-                                    "end": 48,
-                                    "anchorType": null
-                                },
-                                {
-                                    "title": null,
-                                    "type": "EM",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 49,
-                                    "end": 166,
-                                    "anchorType": null
+                                    "start": 702,
+                                    "end": 709,
+                                    "anchorType": "LINK"
                                 }
                             ],
                             "iframe": null,
                             "metadata": null
                         },
                         {
-                            "name": "e370",
-                            "text": "Summary",
+                            "name": "1672",
+                            "text": "Implementation Challenges",
                             "type": "H3",
                             "href": null,
                             "layout": null,
@@ -1547,88 +791,8 @@
                             "metadata": null
                         },
                         {
-                            "name": "64ef",
-                            "text": "While privateGPT is a currently a proof-of-concept, it looks promising, However, it is not ready for production. There are a couple of issues:",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "a0f5",
-                            "text": "Slow inferencing. It took a while to perform the text embedding, but this is acceptable as this is a one-time process. However, inferencing is slow, especially on slower machines. I used a M1 Mac with 32GB ram and it still took a while to churn out the answer.",
-                            "type": "ULI",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 0,
-                                    "end": 16,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "bc1b",
-                            "text": "Memory hog. privateGPT uses lots of memory, and after asking one or two questions, I will get an out-of-memory error, like this:",
-                            "type": "ULI",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 0,
-                                    "end": 10,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "5beb",
-                            "text": "segmentation fault python privateGPT.py. /Users/weimenglee/miniforge3/lib/python3.10/multiprocessing/resource_tracker.py:224: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown. warnings.warn(‘resource_tracker: There appear to be %d ‘",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "EM",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 0,
-                                    "end": 284,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "a433",
-                            "text": "Until the author of privateGPT fixes the above two issues, privateGPT remains an experiment to see how you can train your LLM without exposing your private data to the cloud.",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "1c74",
-                            "text": "Level Up Coding",
+                            "name": "d693",
+                            "text": "Status codes and headers",
                             "type": "H3",
                             "href": null,
                             "layout": null,
@@ -1637,39 +801,39 @@
                             "metadata": null
                         },
                         {
-                            "name": "f85c",
-                            "text": "Thanks for being a part of our community! Before you go:",
+                            "name": "254a",
+                            "text": "Early Flush prevents subsequent changes to the headers (e.g to redirect or change the status code). In the React + NodeJS world, it’s common to delegate redirects and error throwing to a React app rendered after the data has been fetched. This won’t work if you’ve already sent an early <head> tag and a 200 OK status.",
                             "type": "P",
                             "href": null,
                             "layout": null,
-                            "markups": [],
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "CODE",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 287,
+                                    "end": 293,
+                                    "anchorType": null
+                                }
+                            ],
                             "iframe": null,
                             "metadata": null
                         },
                         {
-                            "name": "357f",
-                            "text": "👏 Clap for the story and follow the author 👉",
-                            "type": "ULI",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "a4ba",
-                            "text": "📰 View more content in the Level Up Coding publication",
-                            "type": "ULI",
+                            "name": "6ddd",
+                            "text": "We solved this problem by moving error and redirect logic out of our React app. That logic is now performed in Express server middleware before we attempt to Early Flush.",
+                            "type": "P",
                             "href": null,
                             "layout": null,
                             "markups": [
                                 {
                                     "title": "",
                                     "type": "A",
-                                    "href": "https://levelup.gitconnected.com/?utm_source=pub&utm_medium=post",
+                                    "href": "https://expressjs.com/en/guide/using-middleware.html",
                                     "userId": null,
-                                    "start": 28,
-                                    "end": 55,
+                                    "start": 111,
+                                    "end": 136,
                                     "anchorType": "LINK"
                                 }
                             ],
@@ -1677,57 +841,29 @@
                             "metadata": null
                         },
                         {
-                            "name": "1d51",
-                            "text": "💰 Free coding interview course ⇒ View Course",
-                            "type": "ULI",
+                            "name": "802d",
+                            "text": "Buffering",
+                            "type": "H3",
                             "href": null,
                             "layout": null,
-                            "markups": [
-                                {
-                                    "title": "",
-                                    "type": "A",
-                                    "href": "https://skilled.dev/?utm_source=luc&utm_medium=article",
-                                    "userId": null,
-                                    "start": 34,
-                                    "end": 45,
-                                    "anchorType": "LINK"
-                                }
-                            ],
+                            "markups": [],
                             "iframe": null,
                             "metadata": null
                         },
                         {
-                            "name": "3bcd",
-                            "text": "🔔 Follow us: Twitter | LinkedIn | Newsletter",
-                            "type": "ULI",
+                            "name": "f77b",
+                            "text": "We found that nginx buffer responses by default. This has resource utilization benefits but is counterproductive when the goal is sending incremental responses. We had to configure these services to disable buffering. We expected a potential increase in resource usage with this change but found the impact to be negligible.",
+                            "type": "P",
                             "href": null,
                             "layout": null,
                             "markups": [
                                 {
                                     "title": "",
                                     "type": "A",
-                                    "href": "https://twitter.com/gitconnected",
+                                    "href": "https://www.nginx.com/resources/wiki/start/topics/examples/x-accel/#x-accel-buffering",
                                     "userId": null,
                                     "start": 14,
-                                    "end": 21,
-                                    "anchorType": "LINK"
-                                },
-                                {
-                                    "title": "",
-                                    "type": "A",
-                                    "href": "https://www.linkedin.com/company/gitconnected",
-                                    "userId": null,
-                                    "start": 24,
-                                    "end": 32,
-                                    "anchorType": "LINK"
-                                },
-                                {
-                                    "title": "",
-                                    "type": "A",
-                                    "href": "https://newsletter.levelup.dev",
-                                    "userId": null,
-                                    "start": 35,
-                                    "end": 45,
+                                    "end": 19,
                                     "anchorType": "LINK"
                                 }
                             ],
@@ -1735,8 +871,18 @@
                             "metadata": null
                         },
                         {
-                            "name": "3fff",
-                            "text": "🚀👉 Join the Level Up talent collective and find an amazing job",
+                            "name": "534f",
+                            "text": "Response delays",
+                            "type": "H3",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "4a34",
+                            "text": "We noticed that our Early Flush responses had an unexpected delay of around 200ms, which disappeared when we disabled gzip compression. This turned out to be an interaction between Nagle’s algorithm and Delayed ACK. These optimizations attempt to maximize data sent per packet, introducing latency when sending small amounts of data. It’s especially easy to run into this issue with jumbo frames, which increases maximum packet sizes. It turns out that gzip reduced the size of our writes to the point where they couldn’t fill a packet, and the solution was to disable Nagle’s algorithm in our haproxy load balancer.",
                             "type": "P",
                             "href": null,
                             "layout": null,
@@ -1744,19 +890,155 @@
                                 {
                                     "title": "",
                                     "type": "A",
-                                    "href": "https://jobs.levelup.dev/talent/welcome?referral=true",
+                                    "href": "https://en.wikipedia.org/wiki/Nagle%27s_algorithm",
                                     "userId": null,
-                                    "start": 5,
-                                    "end": 64,
+                                    "start": 181,
+                                    "end": 198,
                                     "anchorType": "LINK"
                                 },
                                 {
+                                    "title": "",
+                                    "type": "A",
+                                    "href": "https://en.wikipedia.org/wiki/TCP_delayed_acknowledgment",
+                                    "userId": null,
+                                    "start": 203,
+                                    "end": 214,
+                                    "anchorType": "LINK"
+                                },
+                                {
+                                    "title": "",
+                                    "type": "A",
+                                    "href": "https://en.wikipedia.org/wiki/Jumbo_frame",
+                                    "userId": null,
+                                    "start": 383,
+                                    "end": 395,
+                                    "anchorType": "LINK"
+                                },
+                                {
+                                    "title": "",
+                                    "type": "A",
+                                    "href": "https://www.haproxy.com/documentation/hapee/latest/onepage/#4.2-option%20http-no-delay",
+                                    "userId": null,
+                                    "start": 594,
+                                    "end": 601,
+                                    "anchorType": "LINK"
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "72d0",
+                            "text": "Conclusion",
+                            "type": "H3",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "afbd",
+                            "text": "HTTP Streaming has been a very successful strategy for improving web performance at Airbnb. Our experiments showed that Early Flush produced a flat reduction in First Contentful Paint (FCP) of around 100ms on every page tested, including the Airbnb homepage. Data streaming further eliminated the FCP costs of slow backend queries. While there were challenges along the way, we found that adapting our existing React application to support streaming was very feasible and robust, despite not being designed for it originally. We’re also excited to see the broader frontend ecosystem trend in the direction of prioritizing streaming, from @defer and @stream in GraphQL to streaming SSR in Next.js. Whether you’re using these new technologies, or extending an existing codebase, we hope you’ll explore streaming to build a faster frontend for all!",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": "",
+                                    "type": "A",
+                                    "href": "https://web.dev/fcp/",
+                                    "userId": null,
+                                    "start": 161,
+                                    "end": 183,
+                                    "anchorType": "LINK"
+                                },
+                                {
+                                    "title": "",
+                                    "type": "A",
+                                    "href": "https://graphql.org/blog/2020-12-08-improving-latency-with-defer-and-stream-directives/",
+                                    "userId": null,
+                                    "start": 638,
+                                    "end": 667,
+                                    "anchorType": "LINK"
+                                },
+                                {
+                                    "title": "",
+                                    "type": "A",
+                                    "href": "https://nextjs.org/docs/advanced-features/react-18/streaming",
+                                    "userId": null,
+                                    "start": 671,
+                                    "end": 695,
+                                    "anchorType": "LINK"
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "ecb2",
+                            "text": "If this type of work interests you, check out some of our related positions here.",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": "",
+                                    "type": "A",
+                                    "href": "https://careers.airbnb.com/",
+                                    "userId": null,
+                                    "start": 76,
+                                    "end": 80,
+                                    "anchorType": "LINK"
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "55ba",
+                            "text": "Acknowledgments",
+                            "type": "H3",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "2e78",
+                            "text": "Elliott Sprehn, Aditya Punjani, Jason Jian, Changgeng Li, Siyuan Zhou, Bruce Paul, Max Sadrieh, and everyone else who helped design and implement streaming at Airbnb!",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "1e8d",
+                            "text": "****************",
+                            "type": "H3",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "1416",
+                            "text": "All product names, logos, and brands are property of their respective owners. All company, product and service names used in this website are for identification purposes only. Use of these names, logos, and brands does not imply endorsement.",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
                                     "title": null,
-                                    "type": "STRONG",
+                                    "type": "EM",
                                     "href": null,
                                     "userId": null,
-                                    "start": 5,
-                                    "end": 64,
+                                    "start": 0,
+                                    "end": 241,
                                     "anchorType": null
                                 }
                             ],

@@ -107,6 +107,9 @@ func ConvertParagraphs(paragraphs []entities.Paragraph) string {
 			ps.WriteString(fmt.Sprintf("<ul>%s</ul>", listItems))
 		case "P":
 			children := ConvertMarkup(p.Text, p.Markups)
+			if p.Name == "ca5b" {
+				fmt.Println(children)
+			}
 			ps.WriteString(fmt.Sprintf("<p>%s</p>", children))
 		case "PRE":
 			children := ConvertMarkup(p.Text, p.Markups)
@@ -154,9 +157,6 @@ func convertUli(ps []entities.Paragraph) (string, int) {
 
 	for _, p := range ps {
 		if p.Type == "ULI" {
-			if p.Text == "Rename the example.env to .env." {
-				fmt.Println("HERE")
-			}
 			children := ConvertMarkup(p.Text, p.Markups)
 			sb.WriteString(fmt.Sprintf("<li>%s</li>", children))
 			count++

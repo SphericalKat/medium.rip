@@ -2,6 +2,7 @@ package converters
 
 import (
 	"fmt"
+	"html"
 	"sort"
 	"strings"
 	"unicode/utf16"
@@ -71,6 +72,10 @@ func ranges(text string, markups []entities.Markup) []RangeWithMarkup {
 }
 
 func ConvertMarkup(text string, markups []entities.Markup) string {
+	if len(markups) == 0 {
+		return html.EscapeString(text)
+	}
+
 	var markedUp strings.Builder
 	for _, r := range ranges(text, markups) {
 		// handle utf-16
@@ -95,18 +100,18 @@ func markupNodeInContainer(child string, markup entities.Markup) string {
 	switch markup.Type {
 	case "A":
 		if markup.Href != nil {
-			return fmt.Sprintf(`<a href="%s">%s</a>`, *markup.Href, child)
+			return fmt.Sprintf(`<a href="%s">%s</a>`, *markup.Href, html.EscapeString(child))
 		} else if markup.UserID != nil {
-			return fmt.Sprintf(`<a href="https://medium.com/u/%s">%s</a>`, markup.UserID, child)
+			return fmt.Sprintf(`<a href="https://medium.com/u/%s">%s</a>`, markup.UserID, html.EscapeString(child))
 		}
 	case "CODE":
-		return fmt.Sprintf(`<code>%s</code>`, child)
+		return fmt.Sprintf(`<code>%s</code>`, html.EscapeString(child))
 	case "EM":
-		return fmt.Sprintf(`<em>%s</em>`, child)
+		return fmt.Sprintf(`<em>%s</em>`, html.EscapeString(child))
 	case "STRONG":
-		return fmt.Sprintf(`<strong>%s</strong>`, child)
+		return fmt.Sprintf(`<strong>%s</strong>`, html.EscapeString(child))
 	default:
-		return fmt.Sprintf(`<code>%s</code>`, child)
+		return fmt.Sprintf(`<code>%s</code>`, html.EscapeString(child))
 	}
-	return child
+	return html.EscapeString(child)
 }
