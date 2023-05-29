@@ -71,7 +71,8 @@ func TestConvert(t *testing.T) {
 		},
 	})
 
-	if markup != "<strong>&lt;strong&gt; </strong><em>&lt;strong&gt;and&lt;/strong&gt;</em><em> emphasized</em> only" {
-		t.Errorf("Expected markup to be <strong>&lt;strong&gt; </strong><em>&lt;strong&gt;and&lt;/strong&gt;</em><em> emphasized</em> only only, got %s", markup)
+	expected := "<strong>&lt;strong&gt; </strong><em><strong>and</strong></em><em> emphasized</em> only"
+	if markup != expected {
+		t.Errorf("Expected markup to be '%s', got '%s'", expected, markup)
 	}
 }
