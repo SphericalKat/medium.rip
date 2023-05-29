@@ -58,7 +58,10 @@ func ConvertParagraphs(paragraphs []entities.Paragraph) string {
 		}
 
 		switch p.Type {
-		case "BQ", "MIXTAPE_EMBED", "PQ":
+		case "BQ", "PQ":
+			children := ConvertMarkup(p.Text, p.Markups)
+			ps.WriteString(fmt.Sprintf("<blockquote><p>%s</p></blockquote>", children))
+		case "MIXTAPE_EMBED":
 			children := ConvertMarkup(p.Text, p.Markups)
 			ps.WriteString(fmt.Sprintf("<blockquote><p>%s</p></blockquote>", children))
 		case "H2":
@@ -132,7 +135,7 @@ func convertOli(ps []entities.Paragraph) (string, int) {
 			break
 		}
 	}
-	
+
 	return sb.String(), count
 }
 
@@ -149,6 +152,6 @@ func convertUli(ps []entities.Paragraph) (string, int) {
 			break
 		}
 	}
-	
+
 	return sb.String(), count
 }

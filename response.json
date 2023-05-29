@@ -1,18 +1,18 @@
 {
     "data": {
         "post": {
-            "title": "Improving Performance with HTTP Streaming",
-            "createdAt": 1684264387622,
+            "title": "Building a Data Lake on Google Cloud Platform",
+            "createdAt": 1646039967239,
             "creator": {
-                "id": "e46fded15590",
-                "name": "Victor"
+                "id": "f52f0c0dc336",
+                "name": "Md Hishaam Akhtar"
             },
             "content": {
                 "bodyModel": {
                     "paragraphs": [
                         {
-                            "name": "2f94",
-                            "text": "Improving Performance with HTTP Streaming",
+                            "name": "b715",
+                            "text": "Building a Data Lake on Google Cloud Platform",
                             "type": "H3",
                             "href": null,
                             "layout": null,
@@ -21,46 +21,7 @@
                             "metadata": null
                         },
                         {
-                            "name": "7a08",
-                            "text": "How HTTP Streaming can improve page performance and how Airbnb enabled it on an existing codebase",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "9dd1",
-                            "text": "By: Victor Lin",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": "",
-                                    "type": "A",
-                                    "href": "https://www.linkedin.com/in/victorhlin/",
-                                    "userId": null,
-                                    "start": 4,
-                                    "end": 14,
-                                    "anchorType": "LINK"
-                                },
-                                {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 0,
-                                    "end": 3,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "3351",
+                            "name": "f63c",
                             "text": "",
                             "type": "IMG",
                             "href": null,
@@ -68,15 +29,15 @@
                             "markups": [],
                             "iframe": null,
                             "metadata": {
-                                "id": "1*q2A2ZjnULygCKIWuiSBKXg.jpeg",
-                                "originalWidth": 1440,
-                                "originalHeight": 960
+                                "id": "1*xtYa5no-I247vPiC7wFOFA.png",
+                                "originalWidth": 916,
+                                "originalHeight": 407
                             }
                         },
                         {
-                            "name": "715f",
-                            "text": "Introduction",
-                            "type": "H3",
+                            "name": "1f9b",
+                            "text": "Ever since computers have come into the picture, we have tried to find ways for the computer to store some information. This information that is stored on a computer, which is also called data, is done in several forms. Data has become so important that information has now become a commodity that is available at our fingertips.",
+                            "type": "P",
                             "href": null,
                             "layout": null,
                             "markups": [],
@@ -84,88 +45,434 @@
                             "metadata": null
                         },
                         {
-                            "name": "a054",
-                            "text": "You may have heard a joke that the Internet is a series of tubes. In this blog post, we’re going to talk about how we get a cool, refreshing stream of Airbnb.com bytes into your browser as quickly as possible using HTTP Streaming.",
+                            "name": "a637",
+                            "text": "Data has been stored in computers in a variety of ways over the years, including databases, blob storage, and other methods. In order to do effective business analytics, the data created by modern applications must be processed and analyzed. And the volume of data produced is enormous! It’s critical to store petabytes of data effectively and have the necessary tools to query it in order to work with it. Only then can the analytics on that data produce meaningful results.",
                             "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "2184",
+                            "text": "Big data is a discipline that deals with methods for analyzing, methodically extracting information from, or otherwise dealing with data volumes that are too massive or complicated for typical data-processing application software to handle. To handle the data generated by modern applications, the application of Big Data is very necessary.",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "0295",
+                            "text": "With that in mind, this blog aims to provide a small tutorial on how to create a data lake that reads any changes from an application's database and writes it to the relevant place in the data lake. The tools we shall use for this are as follows:",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "c15c",
+                            "text": "Debezium",
+                            "type": "ULI",
                             "href": null,
                             "layout": null,
                             "markups": [
                                 {
                                     "title": "",
                                     "type": "A",
-                                    "href": "https://en.wikipedia.org/wiki/Series_of_tubes",
+                                    "href": "https://debezium.io",
+                                    "userId": null,
+                                    "start": 0,
+                                    "end": 8,
+                                    "anchorType": "LINK"
+                                },
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 0,
+                                    "end": 8,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "cb8c",
+                            "text": "MySQL",
+                            "type": "ULI",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": "",
+                                    "type": "A",
+                                    "href": "https://www.mysql.com",
+                                    "userId": null,
+                                    "start": 0,
+                                    "end": 5,
+                                    "anchorType": "LINK"
+                                },
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 0,
+                                    "end": 5,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "a28f",
+                            "text": "Apache Kafka",
+                            "type": "ULI",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": "",
+                                    "type": "A",
+                                    "href": "https://kafka.apache.org",
+                                    "userId": null,
+                                    "start": 0,
+                                    "end": 12,
+                                    "anchorType": "LINK"
+                                },
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 0,
+                                    "end": 12,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "be3f",
+                            "text": "Apache Hudi",
+                            "type": "ULI",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": "",
+                                    "type": "A",
+                                    "href": "https://hudi.apache.org",
+                                    "userId": null,
+                                    "start": 0,
+                                    "end": 11,
+                                    "anchorType": "LINK"
+                                },
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 0,
+                                    "end": 11,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "f4ed",
+                            "text": "Apache Spark",
+                            "type": "ULI",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": "",
+                                    "type": "A",
+                                    "href": "https://spark.apache.org",
+                                    "userId": null,
+                                    "start": 0,
+                                    "end": 12,
+                                    "anchorType": "LINK"
+                                },
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 0,
+                                    "end": 12,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "011d",
+                            "text": "The architecture of what we will be building is as below:",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "7012",
+                            "text": "Architecture of the Data Lake",
+                            "type": "IMG",
+                            "href": null,
+                            "layout": "INSET_CENTER",
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": {
+                                "id": "1*RNKyx5q69Y-__SwNBZD9cQ.png",
+                                "originalWidth": 3362,
+                                "originalHeight": 1554
+                            }
+                        },
+                        {
+                            "name": "b0d4",
+                            "text": "The first step is to use Debezium to read all the changes happening in a relational database and push all that to a Kafka Cluster.",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "13b9",
+                            "text": "Debezium is an open-source distributed platform for change data capture. Debezium can be pointed at any relational database and it can start capturing any data change as it happens in real-time. It is very fast and durable. It is maintained by Red Hat.",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "c70f",
+                            "text": "Firstly, we shall use docker-compose to set up a Debezium, MySQL, and Kafka on our machine. You can also use independent installations of those. We shall be using the mysql image provided to us by Debezium as it contains data already inside it. In any production environment, proper clusters of Kafka, MySQL, and Debezium can be used. The docker compose file is as below:",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "CODE",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 22,
+                                    "end": 36,
+                                    "anchorType": null
+                                },
+                                {
+                                    "title": null,
+                                    "type": "CODE",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 167,
+                                    "end": 172,
+                                    "anchorType": null
+                                }
+                            ],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "eadc",
+                            "text": "",
+                            "type": "IFRAME",
+                            "href": null,
+                            "layout": "INSET_CENTER",
+                            "markups": [],
+                            "iframe": {
+                                "mediaResource": {
+                                    "href": "https://gist.github.com/mdhishaamakhtar/e820fd2a97288a6253397823c340992d",
+                                    "iframeSrc": "",
+                                    "iframeWidth": 0,
+                                    "iframeHeight": 0
+                                }
+                            },
+                            "metadata": null
+                        },
+                        {
+                            "name": "9742",
+                            "text": "The DEBEZIUM_VERSION can be set as 1.8. Also, make sure to set MYSQL_ROOT_PASS, MYSQL_USER and MYSQL_PASSWORD.",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "CODE",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 4,
+                                    "end": 20,
+                                    "anchorType": null
+                                },
+                                {
+                                    "title": null,
+                                    "type": "CODE",
+                                    "href": null,
                                     "userId": null,
                                     "start": 35,
-                                    "end": 64,
-                                    "anchorType": "LINK"
+                                    "end": 38,
+                                    "anchorType": null
+                                },
+                                {
+                                    "title": null,
+                                    "type": "CODE",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 63,
+                                    "end": 78,
+                                    "anchorType": null
+                                },
+                                {
+                                    "title": null,
+                                    "type": "CODE",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 80,
+                                    "end": 90,
+                                    "anchorType": null
+                                },
+                                {
+                                    "title": null,
+                                    "type": "CODE",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 95,
+                                    "end": 109,
+                                    "anchorType": null
                                 }
                             ],
                             "iframe": null,
                             "metadata": null
                         },
                         {
-                            "name": "f9bf",
-                            "text": "Let’s first understand what streaming means. Imagine we had a spigot and two options:",
+                            "name": "9bde",
+                            "text": "Before we go forward, we shall look at the structure of the database inventory which is provided to us by the debezium image. To enter the command line of the database:",
                             "type": "P",
                             "href": null,
                             "layout": null,
-                            "markups": [],
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "CODE",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 69,
+                                    "end": 78,
+                                    "anchorType": null
+                                }
+                            ],
                             "iframe": null,
                             "metadata": null
                         },
                         {
-                            "name": "7ad4",
-                            "text": "Fill a big cup, and then pour it all down the tube (the “buffered” strategy)",
-                            "type": "ULI",
+                            "name": "cc16",
+                            "text": "",
+                            "type": "IFRAME",
                             "href": null,
-                            "layout": null,
+                            "layout": "INSET_CENTER",
                             "markups": [],
-                            "iframe": null,
+                            "iframe": {
+                                "mediaResource": {
+                                    "href": "https://gist.github.com/mdhishaamakhtar/fbdd51aa05691cc0ddd9450b1ed0ae5f",
+                                    "iframeSrc": "",
+                                    "iframeWidth": 0,
+                                    "iframeHeight": 0
+                                }
+                            },
                             "metadata": null
                         },
                         {
-                            "name": "4438",
-                            "text": "Connect the spigot directly to the tube (the “streaming” strategy)",
-                            "type": "ULI",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "f095",
-                            "text": "In the buffered strategy, everything happens sequentially — our servers first generate the entire response into a buffer (filling the cup), and then more time is spent sending it over the network (pouring it down). The streaming strategy happens in parallel. We break the response into chunks, which are sent as soon as they are ready. The server can start working on the next chunk while previous chunks are still being sent, and the client (e.g, a browser) can begin handling the response before it has been fully received.",
+                            "name": "5923",
+                            "text": "Inside the shell, we can make use of show tables; command. The output should be something like this:",
                             "type": "P",
                             "href": null,
                             "layout": null,
-                            "markups": [],
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "CODE",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 37,
+                                    "end": 49,
+                                    "anchorType": null
+                                }
+                            ],
                             "iframe": null,
                             "metadata": null
                         },
                         {
-                            "name": "d6eb",
-                            "text": "Implementing Streaming at Airbnb",
-                            "type": "H3",
+                            "name": "fa7d",
+                            "text": "Sample Tables in MySQL",
+                            "type": "IMG",
                             "href": null,
-                            "layout": null,
+                            "layout": "INSET_CENTER",
                             "markups": [],
                             "iframe": null,
-                            "metadata": null
+                            "metadata": {
+                                "id": "1*SafBcT0_gPgPlu5yN2eqlA.png",
+                                "originalWidth": 548,
+                                "originalHeight": 540
+                            }
                         },
                         {
-                            "name": "ca5b",
-                            "text": "Streaming has clear advantages, but most websites today still rely on a buffered approach to generate responses. One reason for this is the additional engineering effort required to break the page into independent chunks. This just isn’t feasible sometimes. For example, if all of the content on the page relies on a slow backend query, then we won’t be able to send anything until that query finishes.",
+                            "name": "29c5",
+                            "text": "We can check the contents of the customer table by using select * from customers; command. The output should be something like this:",
                             "type": "P",
                             "href": null,
                             "layout": null,
-                            "markups": [],
+                            "markups": [
+                                {
+                                    "title": null,
+                                    "type": "CODE",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 57,
+                                    "end": 81,
+                                    "anchorType": null
+                                }
+                            ],
                             "iframe": null,
                             "metadata": null
                         },
                         {
-                            "name": "806e",
-                            "text": "However, there’s one use case that’s universally applicable. We can use streaming to reduce network waterfalls. This term refers to when one network request triggers another, resulting in a cascading series of sequential requests. This is easily visualized in a tool like Chrome’s Waterfall:",
+                            "name": "76b2",
+                            "text": "Data for Customers Table",
+                            "type": "IMG",
+                            "href": null,
+                            "layout": "INSET_CENTER",
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": {
+                                "id": "1*xKqPbTPlIr3WIbT88PwN3Q.png",
+                                "originalWidth": 1282,
+                                "originalHeight": 450
+                            }
+                        },
+                        {
+                            "name": "d6d7",
+                            "text": "Now, after the containers have been created, we will be able to activate a Debezium source connector for Kafka Connect. The data format we shall be using is the Avro data format. Avro is a row-oriented remote procedure call and data serialization framework developed within Apache’s Hadoop project. It uses JSON for defining data types and protocols, and serialises data in a compact binary format.",
                             "type": "P",
                             "href": null,
                             "layout": null,
@@ -173,42 +480,55 @@
                                 {
                                     "title": "",
                                     "type": "A",
-                                    "href": "https://developer.chrome.com/docs/devtools/network/reference/#waterfall",
+                                    "href": "https://avro.apache.org",
                                     "userId": null,
-                                    "start": 281,
-                                    "end": 290,
+                                    "start": 161,
+                                    "end": 177,
                                     "anchorType": "LINK"
                                 },
                                 {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
+                                    "title": "",
+                                    "type": "A",
+                                    "href": "https://hadoop.apache.org",
                                     "userId": null,
-                                    "start": 92,
-                                    "end": 110,
-                                    "anchorType": null
+                                    "start": 274,
+                                    "end": 297,
+                                    "anchorType": "LINK"
                                 }
                             ],
                             "iframe": null,
                             "metadata": null
                         },
                         {
-                            "name": "77db",
-                            "text": "Chrome Network Waterfall illustrating a cascade of sequential requests",
-                            "type": "IMG",
+                            "name": "a605",
+                            "text": "Let’s create another file with the configurations for our Debezium Connector.",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "fe5d",
+                            "text": "",
+                            "type": "IFRAME",
                             "href": null,
                             "layout": "INSET_CENTER",
                             "markups": [],
-                            "iframe": null,
-                            "metadata": {
-                                "id": "1*qhOyK4HxTnhImOTPhSA4DQ.png",
-                                "originalWidth": 1592,
-                                "originalHeight": 1062
-                            }
+                            "iframe": {
+                                "mediaResource": {
+                                    "href": "https://gist.github.com/mdhishaamakhtar/86692182ae24537fff550d704dd2f479",
+                                    "iframeSrc": "",
+                                    "iframeWidth": 0,
+                                    "iframeHeight": 0
+                                }
+                            },
+                            "metadata": null
                         },
                         {
-                            "name": "bde8",
-                            "text": "Most web pages rely on external JavaScript and CSS files linked within the HTML, resulting in a network waterfall — downloading the HTML triggers JavaScript and CSS downloads. As a result, it’s a best practice to place all CSS and JavaScript tags near the beginning of the HTML in the <head> tag. This ensures that the browser sees them earlier. With streaming, we can reduce this delay further, by sending that portion of the <head> tag first.",
+                            "name": "85b3",
+                            "text": "As we can see, we have configured the details of the database in this as well as the database to read changes from. Make sure to change the values of MYSQL_USER and MYSQL_PASSWORD to whatever you had configured earlier. Now, we shall run a command to register this in Kafka Connect. The command is as follows:",
                             "type": "P",
                             "href": null,
                             "layout": null,
@@ -218,8 +538,8 @@
                                     "type": "CODE",
                                     "href": null,
                                     "userId": null,
-                                    "start": 285,
-                                    "end": 291,
+                                    "start": 150,
+                                    "end": 160,
                                     "anchorType": null
                                 },
                                 {
@@ -227,8 +547,8 @@
                                     "type": "CODE",
                                     "href": null,
                                     "userId": null,
-                                    "start": 427,
-                                    "end": 433,
+                                    "start": 165,
+                                    "end": 179,
                                     "anchorType": null
                                 }
                             ],
@@ -236,380 +556,25 @@
                             "metadata": null
                         },
                         {
-                            "name": "ea4f",
-                            "text": "Early Flush",
-                            "type": "H3",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "98d3",
-                            "text": "The most straightforward way to send an early <head> tag is by breaking a standard response into two parts. This technique is called Early Flush, as one part is sent (“flushed”) before the other.",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "CODE",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 46,
-                                    "end": 52,
-                                    "anchorType": null
-                                },
-                                {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 133,
-                                    "end": 144,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "3146",
-                            "text": "The first part contains things that are fast to compute and can be sent quickly. At Airbnb, we include tags for fonts, CSS, and JavaScript, so that we get the browser benefits mentioned above. The second part contains the rest of the page, including content that relies on API or database queries to compute. The end result looks like this:",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "7a7e",
-                            "text": "Early chunk:",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "d80f",
-                            "text": "<html>\n  <head>\n    <script src=… defer />\n    <link rel=”stylesheet” href=… />\n    <!--lots of other <meta> and other tags… ->",
-                            "type": "PRE",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "7ff4",
-                            "text": "Late chunk:",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "ef75",
-                            "text": "<!-- <head> tags that depend on data go here ->\n  </head>\n  <body>\n    <! — Body content here →\n  </body>\n</html>",
-                            "type": "PRE",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "2ee9",
-                            "text": "We had to restructure our app to make this possible. For context, Airbnb uses an Express-based NodeJS server to render web pages using React. We previously had a single React component in charge of rendering the complete HTML document. However, this presented two problems:",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "9d43",
-                            "text": "Producing incremental chunks of content means we need to work with partial/unclosed HTML tags. For example, the examples you saw above are invalid HTML. The <html> and <head> tags are opened in the Early chunk, but closed in the Late chunk. There’s no way to generate this sort of output using the standard React rendering functions.",
-                            "type": "ULI",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "CODE",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 157,
-                                    "end": 163,
-                                    "anchorType": null
-                                },
-                                {
-                                    "title": null,
-                                    "type": "CODE",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 168,
-                                    "end": 174,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "5fca",
-                            "text": "We can’t render this component until we have all of the data for it.",
-                            "type": "ULI",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "904a",
-                            "text": "We solved these problems by breaking our monolithic component into three:",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "3763",
-                            "text": "an “Early <head>” component",
-                            "type": "ULI",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "bb0e",
-                            "text": "a “Late <head>” component, for <head> tags that depend on data",
-                            "type": "ULI",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "9f1c",
-                            "text": "a “<body>” component",
-                            "type": "ULI",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "03a1",
-                            "text": "Each component renders the contents of the head or body tag. Then we stitch them together by writing open/close tags directly to the HTTP response stream. Overall, the process looks like this:",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "EM",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 27,
-                                    "end": 35,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "5565",
-                            "text": "Write <html><head>",
-                            "type": "OLI",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "CODE",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 6,
-                                    "end": 18,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "975a",
-                            "text": "Render and write the Early <head> to the response",
-                            "type": "OLI",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "c5b9",
-                            "text": "Wait for data",
-                            "type": "OLI",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "4d15",
-                            "text": "Render and write the Late <head> to the response",
-                            "type": "OLI",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "c855",
-                            "text": "Write </head><body>",
-                            "type": "OLI",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "CODE",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 6,
-                                    "end": 19,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "b3e9",
-                            "text": "Render and write the <body> to the response",
-                            "type": "OLI",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "2388",
-                            "text": "Finish up by writing </body></html>",
-                            "type": "OLI",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "CODE",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 21,
-                                    "end": 35,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "364f",
-                            "text": "Data Streaming",
-                            "type": "H3",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "f357",
-                            "text": "Early Flush optimizes CSS and JavaScript network waterfalls. However, users will still be staring at a blank page until the <body> tag arrives. We’d like to improve this by rendering a loading state when there’s no data, which gets replaced once the data arrives. Conveniently, we already have loading states in this situation for client side routing, so we could accomplish this by just rendering the app without waiting for data!",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "CODE",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 124,
-                                    "end": 130,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "4e58",
-                            "text": "Unfortunately, this causes another network waterfall. Browsers have to receive the SSR (Server-Side Render), and then JavaScript triggers another network request to fetch the actual data:",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "a4aa",
-                            "text": "Graph showing a network waterfall where SSR and client-side data fetch happen sequentially",
-                            "type": "IMG",
+                            "name": "ef8e",
+                            "text": "",
+                            "type": "IFRAME",
                             "href": null,
                             "layout": "INSET_CENTER",
                             "markups": [],
-                            "iframe": null,
-                            "metadata": {
-                                "id": "1*6kTkLA-UnBm5UGayU0WAcw.png",
-                                "originalWidth": 1266,
-                                "originalHeight": 230
-                            }
-                        },
-                        {
-                            "name": "6218",
-                            "text": "In our testing, this resulted in a slower total loading time.",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "EM",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 42,
-                                    "end": 47,
-                                    "anchorType": null
+                            "iframe": {
+                                "mediaResource": {
+                                    "href": "https://gist.github.com/mdhishaamakhtar/861db08adddc706c739167aec27d7c18",
+                                    "iframeSrc": "",
+                                    "iframeWidth": 0,
+                                    "iframeHeight": 0
                                 }
-                            ],
-                            "iframe": null,
+                            },
                             "metadata": null
                         },
                         {
-                            "name": "44fa",
-                            "text": "What if we could include this data in the HTML? This would allow our server-side rendering and data fetching to happen in parallel:",
+                            "name": "43ae",
+                            "text": "Now, the Debezium should be able to read the database changes from Kafka.",
                             "type": "P",
                             "href": null,
                             "layout": null,
@@ -618,42 +583,8 @@
                             "metadata": null
                         },
                         {
-                            "name": "7871",
-                            "text": "Graph showing SSR and client-side data fetch happening in parallel",
-                            "type": "IMG",
-                            "href": null,
-                            "layout": "INSET_CENTER",
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": {
-                                "id": "1*AKzOqc2Nd6BcrV-1LZbfxA.png",
-                                "originalWidth": 1184,
-                                "originalHeight": 172
-                            }
-                        },
-                        {
-                            "name": "b8bc",
-                            "text": "Given that we had already broken the page into two chunks with Early Flush, it’s relatively straightforward to introduce a third chunk for what we call Deferred Data. This chunk goes after all of the visible content and does not block rendering. We execute the network requests on the server and stream the responses into the Deferred Data chunk. In the end, our three chunks look like this:",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "STRONG",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 152,
-                                    "end": 165,
-                                    "anchorType": null
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "3cb8",
-                            "text": "Early chunk",
+                            "name": "d823",
+                            "text": "The next step involves reading the data from Kafka using Spark and Hudi and putting them into Google Cloud Storage Bucket in Hudi file format. Before we start using them, let’s understand what Hudi and Spark are.",
                             "type": "P",
                             "href": null,
                             "layout": null,
@@ -662,58 +593,8 @@
                             "metadata": null
                         },
                         {
-                            "name": "501c",
-                            "text": "<html>\n  <head>\n    <link rel=”preload” as=”script” href=… />\n    <link rel=”stylesheet” href=… />\n    <! — lots of other <meta> and other tags… →",
-                            "type": "PRE",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "a45c",
-                            "text": "Body chunk",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "8831",
-                            "text": "    <! — <head> tags that depend on data go here →\n  </head>\n  <body>\n     <! — Body content here →\n     <script src=… />",
-                            "type": "PRE",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "6042",
-                            "text": "Deferred Data chunk",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "8667",
-                            "text": "    <script type=”application/json” >\n      <!-- data -->\n    </script> \n  </body>\n</html>",
-                            "type": "PRE",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "beef",
-                            "text": "With this implemented on the server, the only remaining task is to write some JavaScript to detect when our Deferred Data chunk arrives. We did this with a MutationObserver, which is an efficient way to observe DOM changes. Once the Deferred Data JSON element is detected, we parse the result and inject it into our application’s network data store. From the application’s perspective, it’s as though a normal network request has been completed.",
+                            "name": "d513",
+                            "text": "Apache Hudi is an open-source data management framework used to simplify incremental data processing and data pipeline development. This framework more efficiently manages business requirements like data lifecycle and improves data quality. Hudi enables you to manage data at the record-level on cloud based data lakes to simplify Change Data Capture (CDC) and streaming data ingestion and helps to handle data privacy use cases requiring record level updates and deletes. Data sets managed by Hudi are stored in a cloud storage bucket using open storage formats, while integrations with Presto, Apache Hive and/or Apache Spark gives near real-time access to updated data using familiar tools.",
                             "type": "P",
                             "href": null,
                             "layout": null,
@@ -721,19 +602,37 @@
                                 {
                                     "title": "",
                                     "type": "A",
-                                    "href": "https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver",
+                                    "href": "https://hive.apache.org",
                                     "userId": null,
-                                    "start": 156,
-                                    "end": 172,
+                                    "start": 596,
+                                    "end": 607,
                                     "anchorType": "LINK"
+                                },
+                                {
+                                    "title": "",
+                                    "type": "A",
+                                    "href": "https://spark.apache.org",
+                                    "userId": null,
+                                    "start": 615,
+                                    "end": 627,
+                                    "anchorType": "LINK"
+                                },
+                                {
+                                    "title": null,
+                                    "type": "STRONG",
+                                    "href": null,
+                                    "userId": null,
+                                    "start": 0,
+                                    "end": 11,
+                                    "anchorType": null
                                 }
                             ],
                             "iframe": null,
                             "metadata": null
                         },
                         {
-                            "name": "64b4",
-                            "text": "Watch out for `defer`",
+                            "name": "9ebe",
+                            "text": "Apache Spark is an open-source unified analytics engine for large-scale data processing. Spark provides an interface for programming clusters with implicit data parallelism and fault tolerance. Originally developed at the University of California, Berkeley’s AMPLab, the Spark codebase was later donated to the Apache Software Foundation, which has maintained it since.",
                             "type": "P",
                             "href": null,
                             "layout": null,
@@ -744,7 +643,7 @@
                                     "href": null,
                                     "userId": null,
                                     "start": 0,
-                                    "end": 21,
+                                    "end": 12,
                                     "anchorType": null
                                 }
                             ],
@@ -752,8 +651,8 @@
                             "metadata": null
                         },
                         {
-                            "name": "3228",
-                            "text": "You may notice that some tags are re-ordered from the Early Flush example. The script tags moved from the Early chunk to the Body chunk and no longer have the defer attribute. This attribute avoids render-blocking script execution by deferring scripts until after the HTML has been downloaded and parsed. This is suboptimal when using Deferred Data, as all of the visible content has already been received by the end of the Body chunk, and we no longer worry about render-blocking at that point. We can fix this by moving the script tags to the end of the Body chunk, and removing the defer attribute. Moving the tags later in the document does introduce a network waterfall, which we solved by adding preload tags into the Early chunk.",
+                            "name": "1595",
+                            "text": "Now, since we are building a solution on Google Cloud, the best way to go about this would be to use Google Cloud Dataproc. Google Cloud Dataproc is a managed service for processing large datasets, such as those used in big data initiatives. Dataproc is part of Google Cloud Platform, Google’s public cloud offering. Dataproc helps users process, transform and understand vast quantities of data.",
                             "type": "P",
                             "href": null,
                             "layout": null,
@@ -761,59 +660,19 @@
                                 {
                                     "title": "",
                                     "type": "A",
-                                    "href": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#attributes",
+                                    "href": "https://cloud.google.com/dataproc",
                                     "userId": null,
-                                    "start": 159,
-                                    "end": 174,
+                                    "start": 101,
+                                    "end": 122,
                                     "anchorType": "LINK"
                                 },
-                                {
-                                    "title": "",
-                                    "type": "A",
-                                    "href": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/preload",
-                                    "userId": null,
-                                    "start": 702,
-                                    "end": 709,
-                                    "anchorType": "LINK"
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "1672",
-                            "text": "Implementation Challenges",
-                            "type": "H3",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "d693",
-                            "text": "Status codes and headers",
-                            "type": "H3",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "254a",
-                            "text": "Early Flush prevents subsequent changes to the headers (e.g to redirect or change the status code). In the React + NodeJS world, it’s common to delegate redirects and error throwing to a React app rendered after the data has been fetched. This won’t work if you’ve already sent an early <head> tag and a 200 OK status.",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
                                 {
                                     "title": null,
-                                    "type": "CODE",
+                                    "type": "STRONG",
                                     "href": null,
                                     "userId": null,
-                                    "start": 287,
-                                    "end": 293,
+                                    "start": 149,
+                                    "end": 240,
                                     "anchorType": null
                                 }
                             ],
@@ -821,29 +680,9 @@
                             "metadata": null
                         },
                         {
-                            "name": "6ddd",
-                            "text": "We solved this problem by moving error and redirect logic out of our React app. That logic is now performed in Express server middleware before we attempt to Early Flush.",
+                            "name": "4239",
+                            "text": "Inside the Google Dataproc instance, Spark and all the required libraries are preinstalled. After we have created the instance, we can run the following spark job in it to complete our pipeline:",
                             "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": "",
-                                    "type": "A",
-                                    "href": "https://expressjs.com/en/guide/using-middleware.html",
-                                    "userId": null,
-                                    "start": 111,
-                                    "end": 136,
-                                    "anchorType": "LINK"
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "802d",
-                            "text": "Buffering",
-                            "type": "H3",
                             "href": null,
                             "layout": null,
                             "markups": [],
@@ -851,29 +690,26 @@
                             "metadata": null
                         },
                         {
-                            "name": "f77b",
-                            "text": "We found that nginx buffer responses by default. This has resource utilization benefits but is counterproductive when the goal is sending incremental responses. We had to configure these services to disable buffering. We expected a potential increase in resource usage with this change but found the impact to be negligible.",
-                            "type": "P",
+                            "name": "9d97",
+                            "text": "",
+                            "type": "IFRAME",
                             "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": "",
-                                    "type": "A",
-                                    "href": "https://www.nginx.com/resources/wiki/start/topics/examples/x-accel/#x-accel-buffering",
-                                    "userId": null,
-                                    "start": 14,
-                                    "end": 19,
-                                    "anchorType": "LINK"
+                            "layout": "INSET_CENTER",
+                            "markups": [],
+                            "iframe": {
+                                "mediaResource": {
+                                    "href": "https://gist.github.com/mdhishaamakhtar/d64a299e4beda9a919df0d6a0ae29ec8",
+                                    "iframeSrc": "",
+                                    "iframeWidth": 0,
+                                    "iframeHeight": 0
                                 }
-                            ],
-                            "iframe": null,
+                            },
                             "metadata": null
                         },
                         {
-                            "name": "534f",
-                            "text": "Response delays",
-                            "type": "H3",
+                            "name": "3e0c",
+                            "text": "This would run a spark job that fetches the data from the Kafka that we pushed earlier to and writes it to a Google Cloud Storage Bucket. We have to specify the Kafka Topic, the Schema Registry URL and other relevant configurations.",
+                            "type": "P",
                             "href": null,
                             "layout": null,
                             "markups": [],
@@ -881,54 +717,7 @@
                             "metadata": null
                         },
                         {
-                            "name": "4a34",
-                            "text": "We noticed that our Early Flush responses had an unexpected delay of around 200ms, which disappeared when we disabled gzip compression. This turned out to be an interaction between Nagle’s algorithm and Delayed ACK. These optimizations attempt to maximize data sent per packet, introducing latency when sending small amounts of data. It’s especially easy to run into this issue with jumbo frames, which increases maximum packet sizes. It turns out that gzip reduced the size of our writes to the point where they couldn’t fill a packet, and the solution was to disable Nagle’s algorithm in our haproxy load balancer.",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": "",
-                                    "type": "A",
-                                    "href": "https://en.wikipedia.org/wiki/Nagle%27s_algorithm",
-                                    "userId": null,
-                                    "start": 181,
-                                    "end": 198,
-                                    "anchorType": "LINK"
-                                },
-                                {
-                                    "title": "",
-                                    "type": "A",
-                                    "href": "https://en.wikipedia.org/wiki/TCP_delayed_acknowledgment",
-                                    "userId": null,
-                                    "start": 203,
-                                    "end": 214,
-                                    "anchorType": "LINK"
-                                },
-                                {
-                                    "title": "",
-                                    "type": "A",
-                                    "href": "https://en.wikipedia.org/wiki/Jumbo_frame",
-                                    "userId": null,
-                                    "start": 383,
-                                    "end": 395,
-                                    "anchorType": "LINK"
-                                },
-                                {
-                                    "title": "",
-                                    "type": "A",
-                                    "href": "https://www.haproxy.com/documentation/hapee/latest/onepage/#4.2-option%20http-no-delay",
-                                    "userId": null,
-                                    "start": 594,
-                                    "end": 601,
-                                    "anchorType": "LINK"
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "72d0",
+                            "name": "6bfa",
                             "text": "Conclusion",
                             "type": "H3",
                             "href": null,
@@ -938,8 +727,8 @@
                             "metadata": null
                         },
                         {
-                            "name": "afbd",
-                            "text": "HTTP Streaming has been a very successful strategy for improving web performance at Airbnb. Our experiments showed that Early Flush produced a flat reduction in First Contentful Paint (FCP) of around 100ms on every page tested, including the Airbnb homepage. Data streaming further eliminated the FCP costs of slow backend queries. While there were challenges along the way, we found that adapting our existing React application to support streaming was very feasible and robust, despite not being designed for it originally. We’re also excited to see the broader frontend ecosystem trend in the direction of prioritizing streaming, from @defer and @stream in GraphQL to streaming SSR in Next.js. Whether you’re using these new technologies, or extending an existing codebase, we hope you’ll explore streaming to build a faster frontend for all!",
+                            "name": "647d",
+                            "text": "There are several ways in which a data lake can be architected. I have tried to show how to build a data lake using Debezium, Kafka, Hudi, Spark and Google Cloud. Using a setup like this, one can easily scale the pipeline to manage huge data workloads! For more details into each technology, the documentation can be visited. The Spark Job can be customized to have much more fine-grained control. The Hudi shown here can also be integrated with Presto, Hive or Trino. The number of customizations are endless. This article provides one with a basic intro on how one can build a basic data pipeline using the above tools!",
                             "type": "P",
                             "href": null,
                             "layout": null,
@@ -947,28 +736,64 @@
                                 {
                                     "title": "",
                                     "type": "A",
-                                    "href": "https://web.dev/fcp/",
+                                    "href": "https://debezium.io",
                                     "userId": null,
-                                    "start": 161,
-                                    "end": 183,
+                                    "start": 116,
+                                    "end": 124,
                                     "anchorType": "LINK"
                                 },
                                 {
                                     "title": "",
                                     "type": "A",
-                                    "href": "https://graphql.org/blog/2020-12-08-improving-latency-with-defer-and-stream-directives/",
+                                    "href": "https://kafka.apache.org",
                                     "userId": null,
-                                    "start": 638,
-                                    "end": 667,
+                                    "start": 126,
+                                    "end": 131,
                                     "anchorType": "LINK"
                                 },
                                 {
                                     "title": "",
                                     "type": "A",
-                                    "href": "https://nextjs.org/docs/advanced-features/react-18/streaming",
+                                    "href": "https://hudi.apache.org",
                                     "userId": null,
-                                    "start": 671,
-                                    "end": 695,
+                                    "start": 133,
+                                    "end": 137,
+                                    "anchorType": "LINK"
+                                },
+                                {
+                                    "title": "",
+                                    "type": "A",
+                                    "href": "https://spark.apache.org",
+                                    "userId": null,
+                                    "start": 139,
+                                    "end": 144,
+                                    "anchorType": "LINK"
+                                },
+                                {
+                                    "title": "",
+                                    "type": "A",
+                                    "href": "https://prestodb.io",
+                                    "userId": null,
+                                    "start": 446,
+                                    "end": 452,
+                                    "anchorType": "LINK"
+                                },
+                                {
+                                    "title": "",
+                                    "type": "A",
+                                    "href": "https://hive.apache.org",
+                                    "userId": null,
+                                    "start": 454,
+                                    "end": 458,
+                                    "anchorType": "LINK"
+                                },
+                                {
+                                    "title": "",
+                                    "type": "A",
+                                    "href": "https://trino.io",
+                                    "userId": null,
+                                    "start": 462,
+                                    "end": 467,
                                     "anchorType": "LINK"
                                 }
                             ],
@@ -976,8 +801,18 @@
                             "metadata": null
                         },
                         {
-                            "name": "ecb2",
-                            "text": "If this type of work interests you, check out some of our related positions here.",
+                            "name": "816f",
+                            "text": "If you’ve enjoyed this story, please click the 👏 button and share it, so that others can find it as well! Also, feel free to leave a comment below.",
+                            "type": "P",
+                            "href": null,
+                            "layout": null,
+                            "markups": [],
+                            "iframe": null,
+                            "metadata": null
+                        },
+                        {
+                            "name": "1ef7",
+                            "text": "Groww Engineering publishes technical anecdotes, the latest technologies, and better ways to tackle common programming problems. You can subscribe here to get the latest updates.",
                             "type": "P",
                             "href": null,
                             "layout": null,
@@ -985,61 +820,11 @@
                                 {
                                     "title": "",
                                     "type": "A",
-                                    "href": "https://careers.airbnb.com/",
+                                    "href": "https://medium.com/groww-engineering",
                                     "userId": null,
-                                    "start": 76,
-                                    "end": 80,
+                                    "start": 137,
+                                    "end": 151,
                                     "anchorType": "LINK"
-                                }
-                            ],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "55ba",
-                            "text": "Acknowledgments",
-                            "type": "H3",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "2e78",
-                            "text": "Elliott Sprehn, Aditya Punjani, Jason Jian, Changgeng Li, Siyuan Zhou, Bruce Paul, Max Sadrieh, and everyone else who helped design and implement streaming at Airbnb!",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "1e8d",
-                            "text": "****************",
-                            "type": "H3",
-                            "href": null,
-                            "layout": null,
-                            "markups": [],
-                            "iframe": null,
-                            "metadata": null
-                        },
-                        {
-                            "name": "1416",
-                            "text": "All product names, logos, and brands are property of their respective owners. All company, product and service names used in this website are for identification purposes only. Use of these names, logos, and brands does not imply endorsement.",
-                            "type": "P",
-                            "href": null,
-                            "layout": null,
-                            "markups": [
-                                {
-                                    "title": null,
-                                    "type": "EM",
-                                    "href": null,
-                                    "userId": null,
-                                    "start": 0,
-                                    "end": 241,
-                                    "anchorType": null
                                 }
                             ],
                             "iframe": null,

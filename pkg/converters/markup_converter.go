@@ -82,36 +82,39 @@ func ConvertMarkup(text string, markups []entities.Markup) string {
 		utf16Text := utf16.Encode([]rune(text))
 		ranged := utf16Text[r.Range[0]:r.Range[1]]
 		textToWrap := string(utf16.Decode(ranged))
-		markedUp.WriteString(wrapInMarkups(textToWrap, r.Markups))
+		markedUp.WriteString(wrapInMarkups(textToWrap, r.Markups, false))
 	}
 
 	return markedUp.String()
 }
 
-func wrapInMarkups(child string, markups []entities.Markup) string {
+func wrapInMarkups(child string, markups []entities.Markup, childIsMarkup bool) string {
 	if len(markups) == 0 {
 		return child
 	}
+	if !childIsMarkup {
+		child = html.EscapeString(child)
+	}
 	markedUp := markupNodeInContainer(child, markups[0])
-	return wrapInMarkups(markedUp, markups[1:])
+	return wrapInMarkups(markedUp, markups[1:], true)
 }
 
 func markupNodeInContainer(child string, markup entities.Markup) string {
 	switch markup.Type {
 	case "A":
 		if markup.Href != nil {
-			return fmt.Sprintf(`<a href="%s">%s</a>`, *markup.Href, html.EscapeString(child))
+			return fmt.Sprintf(`<a href="%s">%s</a>`, *markup.Href, child)
 		} else if markup.UserID != nil {
-			return fmt.Sprintf(`<a href="https://medium.com/u/%s">%s</a>`, markup.UserID, html.EscapeString(child))
+			return fmt.Sprintf(`<a href="https://medium.com/u/%s">%s</a>`, markup.UserID, child)
 		}
 	case "CODE":
-		return fmt.Sprintf(`<code>%s</code>`, html.EscapeString(child))
+		return fmt.Sprintf(`<code>%s</code>`, child)
 	case "EM":
-		return fmt.Sprintf(`<em>%s</em>`, html.EscapeString(child))
+		return fmt.Sprintf(`<em>%s</em>`, child)
 	case "STRONG":
-		return fmt.Sprintf(`<strong>%s</strong>`, html.EscapeString(child))
+		return fmt.Sprintf(`<strong>%s</strong>`, child)
 	default:
-		return fmt.Sprintf(`<code>%s</code>`, html.EscapeString(child))
+		return fmt.Sprintf(`<code>%s</code>`, child)
 	}
-	return html.EscapeString(child)
+	return child
 }
