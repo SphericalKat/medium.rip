@@ -85,7 +85,9 @@ func ConvertParagraphs(paragraphs []entities.Paragraph) string {
 			} else {
 				ps.WriteString(fmt.Sprintf("<h4>%s</h4>", children))
 			}
-		// TODO: handle IFRAME
+		case "IFRAME":
+			child := ConvertEmbedded(p.Iframe.MediaResource)
+			ps.WriteString(child)
 		case "IMG":
 			ps.WriteString(convertImg(p))
 		case "OLI":

@@ -18,3 +18,7 @@ html, body {
         line-height: 1.7777778;
     }
 }
+
+.gist tbody tr {
+    border: none !important;
+}

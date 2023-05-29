@@ -35,6 +35,17 @@ type BodyModel struct {
 	Paragraphs []Paragraph `json:"paragraphs"`
 }
 
+type MediaResource struct {
+	Href         string `json:"href"`
+	IframeSrc    string `json:"iframeSrc"`
+	IframeWidth  int64  `json:"iframeWidth"`
+	IframeHeight int64  `json:"iframeHeight"`
+}
+
+type Iframe struct {
+	MediaResource MediaResource `json:"mediaResource"`
+}
+
 type Paragraph struct {
 	Name     string      `json:"name"`
 	Text     string      `json:"text"`
@@ -42,7 +53,7 @@ type Paragraph struct {
 	Href     interface{} `json:"href"`
 	Layout   *string     `json:"layout"`
 	Markups  []Markup    `json:"markups"`
-	Iframe   interface{} `json:"iframe"`
+	Iframe   *Iframe     `json:"iframe"`
 	Metadata *Metadata   `json:"metadata"`
 }
 
