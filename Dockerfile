@@ -1,5 +1,5 @@
 # frontend
-FROM node:16-slim as frontend
+FROM node:20-slim as frontend
 RUN corepack enable
 RUN corepack prepare pnpm@latest --activate
 WORKDIR /app
