@@ -4,7 +4,7 @@ go 1.20
 
 require (
 	github.com/gofiber/template v1.8.1
-	github.com/sirupsen/logrus v1.9.2
+	github.com/sirupsen/logrus v1.9.3
 )
 
 require github.com/fsnotify/fsnotify v1.6.0 // indirect
