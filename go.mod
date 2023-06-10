@@ -3,7 +3,7 @@ module github.com/medium.rip
 go 1.20
 
 require (
-	github.com/gofiber/template v1.8.1
+	github.com/gofiber/template v1.8.2
 	github.com/sirupsen/logrus v1.9.3
 )
 
