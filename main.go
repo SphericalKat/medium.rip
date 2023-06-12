@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"sync"
 
-	"github.com/gofiber/template/html"
+	"github.com/gofiber/template/html/v2"
 	log "github.com/sirupsen/logrus"
 
 	"github.com/medium.rip/api"
