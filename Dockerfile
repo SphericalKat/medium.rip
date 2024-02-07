@@ -9,7 +9,7 @@ COPY frontend/ ./
 RUN pnpm build
 
 # backend
-FROM golang:1.20-alpine as backend
+FROM golang:1.22-alpine as backend
 WORKDIR /app
 COPY . .
 RUN rm -rf frontend
