@@ -4,6 +4,7 @@ import (
 	"context"
 	"fmt"
 	"net/http"
+	
 	"sync"
 
 	"github.com/medium.rip/api/routes"
@@ -16,12 +17,14 @@ import (
 )
 
 func RegisterRoutes(ctx context.Context, wg *sync.WaitGroup, engine *html.Engine, fs http.FileSystem) {
+	// more Fiber options at https://docs.gofiber.io/api/fiber/
 	app := fiber.New(fiber.Config{
 		StreamRequestBody:     true,
 		ServerHeader:          "Katbox",
 		AppName:               "Katbox",
 		DisableStartupMessage: true,
 		Views: engine,
+		Network: "tcp",
 	})
 
 	// static file server
@@ -30,6 +33,10 @@ func RegisterRoutes(ctx context.Context, wg *sync.WaitGroup, engine *html.Engine
 		Browse: config.Conf.Env == "dev",
 	}))
 
+	if config.Conf.Proxy != "" {
+		log.Printf("Using proxy: %s", config.Conf.Proxy)
+	}
+	
 	routes.RegisterRoutes(app)
 
 	go func(app *fiber.App) {

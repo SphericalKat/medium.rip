@@ -6,6 +6,8 @@ import (
 	"net/http"
 	"os"
 	"strings"
+	"net/url"
+	"crypto/tls"
 
 	log "github.com/sirupsen/logrus"
 
@@ -30,13 +32,35 @@ func PostData(postId string) (*entities.MediumResponse, error) {
 	}
 
 	// http client to post data
-	url := "https://medium.com/_/graphql"
+	urlreq := "https://medium.com/_/graphql"
 	method := "POST"
-
+	
 	payload := strings.NewReader(fmt.Sprintf("{\"query\":\"query {\\n        post(id: \\\"%s\\\") {\\n          title\\n          createdAt\\n          creator {\\n            id\\n            name\\n          }\\n          content {\\n            bodyModel {\\n              paragraphs {\\n                name\\n                text\\n                type\\n                href\\n                layout\\n                markups {\\n                  title\\n                  type\\n                  href\\n                  userId\\n                  start\\n                  end\\n                  anchorType\\n                }\\n                iframe {\\n                  mediaResource {\\n                    href\\n                    iframeSrc\\n                    iframeWidth\\n                    iframeHeight\\n                  }\\n                }\\n                metadata {\\n                  id\\n                  originalWidth\\n                  originalHeight\\n                }\\n              }\\n            }\\n          }\\n        }\\n      }\",\"variables\":{}}", postId))
 
-	client := &http.Client{}
-	req, err := http.NewRequest(method, url, payload)
+	//log.Printf("Article ID: %s", postId)
+	//log.Printf("PAYLOAD: %s", payload)
+
+	var client *http.Client
+
+	if config.Conf.Proxy != "" {
+		proxyURL, err := url.Parse(config.Conf.Proxy)
+		if err != nil {
+			panic(err)
+		}
+		client = &http.Client{
+			Transport: &http.Transport{
+				Proxy: http.ProxyURL(proxyURL),
+				TLSClientConfig: &tls.Config{
+					InsecureSkipVerify: true,
+				},
+			},
+		}
+	} else {
+		client = &http.Client{}
+	}
+	
+	req, err := http.NewRequest(method, urlreq, payload)
+	req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36")
 	if err != nil {
 		log.Printf("Error constructing request %v\n", err)
 		return nil, err

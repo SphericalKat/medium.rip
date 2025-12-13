@@ -17,6 +17,7 @@ type Config struct {
 	S3Endpoint   string `koanf:"S3_ENDPOINT"`
 	Env          string `koanf:"ENV"`
 	SecretKey    string `koanf:"SECRET_KEY"`
+	Proxy		 string `koanf:"PROXY"`
 }
 
 var Conf *Config
