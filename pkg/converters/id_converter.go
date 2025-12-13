@@ -6,7 +6,6 @@ import (
 	"strings"
 
 	"github.com/gofiber/fiber/v2"
-	//log "github.com/sirupsen/logrus"
 )
 
 var r = regexp.MustCompile(`[\/\-]([0-9a-f]+)\/?$`)
@@ -35,8 +34,6 @@ func idFromPath(path string) string {
 
 func idFromParams(c *fiber.Ctx) string {
 	ru := c.Query("redirectUrl", "")
-	//log.Printf("REQ: %s", string(c.Request().String()))
-	//log.Printf("RESP: %s", string(c.Response().String()))
 	if ru != "" {
 		pu, err := url.Parse(ru)
 		if err != nil {
