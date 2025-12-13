@@ -35,8 +35,8 @@ func RegisterRoutes(ctx context.Context, wg *sync.WaitGroup, engine *html.Engine
 	}))
 
 	if config.Conf.Proxy != "" {
-		proxy.WithTlsConfig(&tls.Config{ InsecureSkipVerify: true,})
-		app.Use(proxy.Balancer(proxy.Config{ Servers: []string{ config.Conf.Proxy } , }))
+		proxy.WithTlsConfig(&tls.Config{ InsecureSkipVerify: false,})
+		app.Use(proxy.Balancer(proxy.Config{ Servers: []string{ config.Conf.Proxy, } , }))
 		log.Printf("Using proxy: %s", config.Conf.Proxy)
 	}
 	
