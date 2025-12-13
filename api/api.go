@@ -43,12 +43,14 @@ func RegisterRoutes(ctx context.Context, wg *sync.WaitGroup, engine *html.Engine
 				//return nil
 				req_code, req_body, req_errs := c.String()
 				log.Printf("REQUEST: %s", req_body)
+				return nil
 			},
 			ModifyResponse: func(c *fiber.Ctx) error {
 				//c.Response().Header.Del(fiber.HeaderServer)
 				//return nil
 				res_code, res_body, res_errs := c.String()
-				log.Printf("RESPONSE: %s", res_body)
+				log.Printf("RESPONSE: %s | %s | %s ", res_code, res_body, res_errs)
+				return nil
 			},
 		}))
 		log.Printf("Using proxy: %s", config.Conf.Proxy)
