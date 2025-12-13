@@ -41,14 +41,14 @@ func RegisterRoutes(ctx context.Context, wg *sync.WaitGroup, engine *html.Engine
 			ModifyRequest: func(c *fiber.Ctx) error {
 				//c.Request().Header.Add("X-Real-IP", c.IP())
 				//return nil
-				req_code, req_body, req_errs := c.String()
+				req_code, req_body, req_errs := c.Request().String()
 				log.Printf("RESPONSE: %s | %s | %s ", req_code, req_body, req_errs)
 				return nil
 			},
 			ModifyResponse: func(c *fiber.Ctx) error {
 				//c.Response().Header.Del(fiber.HeaderServer)
 				//return nil
-				res_code, res_body, res_errs := c.String()
+				res_code, res_body, res_errs := c.Response().String()
 				log.Printf("RESPONSE: %s | %s | %s ", res_code, res_body, res_errs)
 				return nil
 			},
