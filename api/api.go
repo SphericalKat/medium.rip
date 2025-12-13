@@ -44,6 +44,7 @@ func RegisterRoutes(ctx context.Context, wg *sync.WaitGroup, engine *html.Engine
 				//req_code, req_body, req_errs := c.Request().String()
 				//log.Printf("RESPONSE: %s | %s | %s ", req_code, req_body, req_errs)
 				//log.Printf("REQUEST: %s", c.Request().Body())
+				log.Printf("RESP: %s", string(c.Request().String()))
 				return nil
 			},
 			ModifyResponse: func(c *fiber.Ctx) error {
