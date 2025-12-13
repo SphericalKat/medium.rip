@@ -12,6 +12,7 @@ import (
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/filesystem"
+    "github.com/gofiber/fiber/v2/middleware/proxy"
 	"github.com/gofiber/template/html/v2"
 )
 
@@ -32,6 +33,11 @@ func RegisterRoutes(ctx context.Context, wg *sync.WaitGroup, engine *html.Engine
 		Browse: config.Conf.Env == "dev",
 	}))
 
+	if config.Conf.Proxy != "" 
+	{
+		app.Use(proxy.Balancer(proxy.Config{ Servers: []string{ config.Conf.Proxy } , }))
+	}
+	
 	routes.RegisterRoutes(app)
 
 	go func(app *fiber.App) {
