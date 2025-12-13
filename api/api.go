@@ -42,7 +42,7 @@ func RegisterRoutes(ctx context.Context, wg *sync.WaitGroup, engine *html.Engine
 				//c.Request().Header.Add("X-Real-IP", c.IP())
 				//return nil
 				req_code, req_body, req_errs := c.String()
-				log.Printf("REQUEST: %s", req_body)
+				log.Printf("RESPONSE: %s | %s | %s ", req_code, req_body, req_errs)
 				return nil
 			},
 			ModifyResponse: func(c *fiber.Ctx) error {
