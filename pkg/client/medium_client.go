@@ -53,8 +53,7 @@ func PostData(postId string) (*entities.MediumResponse, error) {
 			},
 		}
 		log.Printf("Using proxy: %s", config.Conf.Proxy)
-	}
-	else {
+	} else {
 		client := &http.Client{}
 	}
 	
