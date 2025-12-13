@@ -51,7 +51,7 @@ func RegisterRoutes(ctx context.Context, wg *sync.WaitGroup, engine *html.Engine
 				//return nil
 				//res_code, res_body, res_errs := c.Response().String()
 				//log.Printf("RESPONSE: %s | %s | %s ", res_code, res_body, res_errs)
-				log.Printf("RESP: %s", string(c.Response().Body()))
+				log.Printf("RESP: %s", string(c.Response().String()))
 				return nil
 			},
 		}))
