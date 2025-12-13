@@ -24,7 +24,7 @@ func RegisterRoutes(ctx context.Context, wg *sync.WaitGroup, engine *html.Engine
 		StreamRequestBody:     true,
 		ServerHeader:          "Katbox",
 		AppName:               "Katbox",
-		DisableStartupMessage: false,
+		DisableStartupMessage: true,
 		Views: engine,
 		Network: "tcp",
 	})
@@ -35,32 +35,9 @@ func RegisterRoutes(ctx context.Context, wg *sync.WaitGroup, engine *html.Engine
 		Browse: config.Conf.Env == "dev",
 	}))
 
-	/*
 	if config.Conf.Proxy != "" {
-		proxy.WithTlsConfig(&tls.Config{ InsecureSkipVerify: true,})
-		app.Use(proxy.Balancer(proxy.Config{
-			Servers: []string{ config.Conf.Proxy, },
-			ModifyRequest: func(c *fiber.Ctx) error {
-				//c.Request().Header.Add("X-Real-IP", c.IP())
-				//return nil
-				//req_code, req_body, req_errs := c.Request().String()
-				//log.Printf("RESPONSE: %s | %s | %s ", req_code, req_body, req_errs)
-				//log.Printf("REQUEST: %s", c.Request().Body())
-				log.Printf("RESP: %s", string(c.Request().String()))
-				return nil
-			},
-			ModifyResponse: func(c *fiber.Ctx) error {
-				//c.Response().Header.Del(fiber.HeaderServer)
-				//return nil
-				//res_code, res_body, res_errs := c.Response().String()
-				//log.Printf("RESPONSE: %s | %s | %s ", res_code, res_body, res_errs)
-				log.Printf("RESP: %s", string(c.Response().String()))
-				return nil
-			},
-		}))
 		log.Printf("Using proxy: %s", config.Conf.Proxy)
 	}
-	*/
 	
 	routes.RegisterRoutes(app)
 
