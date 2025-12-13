@@ -36,6 +36,20 @@ func PostData(postId string) (*entities.MediumResponse, error) {
 	payload := strings.NewReader(fmt.Sprintf("{\"query\":\"query {\\n        post(id: \\\"%s\\\") {\\n          title\\n          createdAt\\n          creator {\\n            id\\n            name\\n          }\\n          content {\\n            bodyModel {\\n              paragraphs {\\n                name\\n                text\\n                type\\n                href\\n                layout\\n                markups {\\n                  title\\n                  type\\n                  href\\n                  userId\\n                  start\\n                  end\\n                  anchorType\\n                }\\n                iframe {\\n                  mediaResource {\\n                    href\\n                    iframeSrc\\n                    iframeWidth\\n                    iframeHeight\\n                  }\\n                }\\n                metadata {\\n                  id\\n                  originalWidth\\n                  originalHeight\\n                }\\n              }\\n            }\\n          }\\n        }\\n      }\",\"variables\":{}}", postId))
 
 	client := &http.Client{}
+
+	if config.Conf.Proxy != "" {
+		proxyURL, err := url.Parse(config.Conf.Proxy)
+		if err != nil {
+			panic(err)
+		}
+		client := &http.Client{
+			Transport: &http.Transport{
+				Proxy: http.ProxyURL(proxyURL),
+			},
+		}
+		log.Printf("Using proxy: %s", config.Conf.Proxy)
+	}
+	
 	req, err := http.NewRequest(method, url, payload)
 	if err != nil {
 		log.Printf("Error constructing request %v\n", err)
