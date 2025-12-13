@@ -34,9 +34,11 @@ func PostData(postId string) (*entities.MediumResponse, error) {
 	// http client to post data
 	urlreq := "https://medium.com/_/graphql"
 	method := "POST"
-
+	
 	payload := strings.NewReader(fmt.Sprintf("{\"query\":\"query {\\n        post(id: \\\"%s\\\") {\\n          title\\n          createdAt\\n          creator {\\n            id\\n            name\\n          }\\n          content {\\n            bodyModel {\\n              paragraphs {\\n                name\\n                text\\n                type\\n                href\\n                layout\\n                markups {\\n                  title\\n                  type\\n                  href\\n                  userId\\n                  start\\n                  end\\n                  anchorType\\n                }\\n                iframe {\\n                  mediaResource {\\n                    href\\n                    iframeSrc\\n                    iframeWidth\\n                    iframeHeight\\n                  }\\n                }\\n                metadata {\\n                  id\\n                  originalWidth\\n                  originalHeight\\n                }\\n              }\\n            }\\n          }\\n        }\\n      }\",\"variables\":{}}", postId))
 
+	log.Printf("Article ID: %s", postId)
+	log.Printf("PAYLOAD: %s", payload)
 
 	var client *http.Client
 
