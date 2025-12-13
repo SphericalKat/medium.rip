@@ -61,6 +61,7 @@ func PostData(postId string) (*entities.MediumResponse, error) {
 	}
 	
 	req, err := http.NewRequest(method, urlreq, payload)
+	req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36")
 	if err != nil {
 		log.Printf("Error constructing request %v\n", err)
 		return nil, err
