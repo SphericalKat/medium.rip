@@ -4,6 +4,7 @@ import (
 	"context"
 	"fmt"
 	"net/http"
+	"crypto/tls"
 	"sync"
 
 	"github.com/medium.rip/api/routes"
