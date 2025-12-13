@@ -23,7 +23,7 @@ func RegisterRoutes(ctx context.Context, wg *sync.WaitGroup, engine *html.Engine
 		StreamRequestBody:     true,
 		ServerHeader:          "Katbox",
 		AppName:               "Katbox",
-		DisableStartupMessage: true,
+		DisableStartupMessage: false,
 		Views: engine,
 		Network: "tcp",
 	})
@@ -36,7 +36,21 @@ func RegisterRoutes(ctx context.Context, wg *sync.WaitGroup, engine *html.Engine
 
 	if config.Conf.Proxy != "" {
 		proxy.WithTlsConfig(&tls.Config{ InsecureSkipVerify: true,})
-		app.Use(proxy.Balancer(proxy.Config{ Servers: []string{ config.Conf.Proxy, } , }))
+		app.Use(proxy.Balancer(proxy.Config{
+			Servers: []string{ config.Conf.Proxy, },
+			ModifyRequest: func(c *fiber.Ctx) error {
+				//c.Request().Header.Add("X-Real-IP", c.IP())
+				//return nil
+				req_code, req_body, req_errs := c.String()
+				log.Printf("REQUEST: %s", req_body)
+			},
+			ModifyResponse: func(c *fiber.Ctx) error {
+				//c.Response().Header.Del(fiber.HeaderServer)
+				//return nil
+				res_code, res_body, res_errs := c.String()
+				log.Printf("RESPONSE: %s", res_body)
+			},
+		}))
 		log.Printf("Using proxy: %s", config.Conf.Proxy)
 	}
 	
