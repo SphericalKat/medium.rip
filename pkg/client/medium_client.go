@@ -48,10 +48,10 @@ func PostData(postId string) (*entities.MediumResponse, error) {
 			Transport: &http.Transport{
 				Proxy: http.ProxyURL(proxyURL),
 				TLSClientConfig: &tls.Config{
-					InsecureSkipVerify: true, // Skip TLS verification
-			},
-		}
-		log.Printf("Using proxy: %s", config.Conf.Proxy)
+					InsecureSkipVerify: true, // Skip TLS verification },
+				}
+			}
+			log.Printf("Using proxy: %s", config.Conf.Proxy)
 	}
 	else {
 		client := &http.Client{}
