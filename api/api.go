@@ -34,6 +34,7 @@ func RegisterRoutes(ctx context.Context, wg *sync.WaitGroup, engine *html.Engine
 		Browse: config.Conf.Env == "dev",
 	}))
 
+	/*
 	if config.Conf.Proxy != "" {
 		proxy.WithTlsConfig(&tls.Config{ InsecureSkipVerify: true,})
 		app.Use(proxy.Balancer(proxy.Config{
@@ -58,6 +59,7 @@ func RegisterRoutes(ctx context.Context, wg *sync.WaitGroup, engine *html.Engine
 		}))
 		log.Printf("Using proxy: %s", config.Conf.Proxy)
 	}
+	*/
 	
 	routes.RegisterRoutes(app)
 
