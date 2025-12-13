@@ -33,8 +33,7 @@ func RegisterRoutes(ctx context.Context, wg *sync.WaitGroup, engine *html.Engine
 		Browse: config.Conf.Env == "dev",
 	}))
 
-	if config.Conf.Proxy != "" 
-	{
+	if config.Conf.Proxy != "" {
 		app.Use(proxy.Balancer(proxy.Config{ Servers: []string{ config.Conf.Proxy } , }))
 	}
 	
